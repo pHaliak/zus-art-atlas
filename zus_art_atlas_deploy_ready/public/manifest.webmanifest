@@ -1,0 +1,17 @@
+{
+  "name": "ZUŠ Art Atlas",
+  "short_name": "Art Atlas",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8f5ef",
+  "theme_color": "#a85d33",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
