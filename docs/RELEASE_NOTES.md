@@ -1,13 +1,8 @@
-# Release Notes – v0.2.1
+# Release Notes – v0.2.2 Real Gallery
 
 ## Nové
-- Vianočná kolekcia projektov.
-- Pripravené miesto pre reálne fotografie žiackych prác.
-- Referenčné náhľady a sekcia autorov.
-- Vylepšený detail projektu.
-- Lepšia galéria náhľadov.
-
-## Ďalej
-- Pridať reálne fotografie z nahraného ZIP balíka.
-- Automaticky označiť tému a techniku pri každej fotografii.
-- Pridať open-access referenčné diela.
+- Pridané reálne fotografie žiackych prác z nahraného balíka.
+- Automatické tematické rozdelenie podľa názvov súborov.
+- Vytvorené projekty: Jeseň, Šarkan, Ovocie, Príbeh čiary, Chrobáky, Zátišie – akryl.
+- Náhľadové karty používajú reálne fotografie.
+- Detail projektu obsahuje reálnu galériu žiackych prác.

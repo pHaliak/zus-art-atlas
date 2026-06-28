@@ -1,15 +1,14 @@
 # Roadmap
 
-## v0.2.1
-- vianočná kolekcia,
-- galéria náhľadov,
-- pripravená štruktúra pre fotky žiakov.
-
 ## v0.2.2
-- reálne fotografie žiackych prác,
+- reálne fotogalérie podľa tém,
+- automatické zaradenie podľa názvov súborov.
+
+## v0.2.3
+- fullscreen galéria,
 - základné tagovanie fotografií,
-- priradenie fotiek k projektom.
+- možnosť označiť najlepší náhľad projektu.
 
 ## v0.3
-- rozšírený archív školy,
-- filtrovanie fotografií podľa techniky a témy.
+- väčší archív školy,
+- open-access referenčné diela.

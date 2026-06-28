@@ -1,258 +1,367 @@
 export const projects = [
   {
-    "id": "vianoce-anjel-kolaz",
-    "title": "Vianočný anjel",
-    "grade": "1.–2. ročník",
-    "month": "december",
-    "methodSeries": "Tvar a plocha",
-    "technique": "koláž, kresba",
-    "area": "Plošné vytváranie",
-    "goal": "Vytvoriť jednoduchú sviatočnú kompozíciu pomocou tvaru, línie a dekoratívnych detailov.",
-    "theme": "Vianoce, anjel, sviatok, svetlo, dekorácia",
-    "materials": [
-      "farebný papier",
-      "lepidlo",
-      "nožnice",
-      "fixky",
-      "zlatý alebo strieborný papier"
-    ],
-    "duration": "90 minút",
-    "difficulty": "ľahká",
-    "motivation": "Aké tvary a farby si spájame s Vianocami? Ako môžeme znázorniť pokoj, svetlo a sviatočnú atmosféru?",
-    "procedure": [
-      "Krátky rozhovor o vianočných symboloch.",
-      "Výber jednoduchých tvarov tela, krídel a aureoly.",
-      "Skladanie kompozície z farebných papierov.",
-      "Doplnenie dekoratívnych línií a detailov.",
-      "Spoločné porovnanie rôznych riešení anjela."
-    ],
-    "artists": [
-      {
-        "name": "Fra Angelico",
-        "works": [
-          "Annunciation"
-        ],
-        "note": "anjelská figúra, pokojná farebnosť a duchovná atmosféra"
-      },
-      {
-        "name": "Marc Chagall",
-        "works": [
-          "Angel imagery"
-        ],
-        "note": "poetické zobrazenie postáv a lietania"
-      }
-    ],
-    "colors": [
-      "#f5d76e",
-      "#fff4e6",
-      "#8e6b3a",
-      "#b94e2f"
-    ],
-    "standard": "Tvar, plocha, dekoratívne prvky, jednoduchá kompozícia."
-  },
-  {
-    "id": "vianoce-betlehem-priestor",
-    "title": "Betlehem v priestore",
-    "grade": "3.–4. ročník",
-    "month": "december",
-    "methodSeries": "Priestor",
-    "technique": "priestorová tvorba, papieroplastika",
-    "area": "Priestorové vytváranie",
-    "goal": "Vytvoriť jednoduchú priestorovú scénu s postavami a architektúrou.",
-    "theme": "Vianoce, Betlehem, postavy, architektúra, priestor",
-    "materials": [
-      "kartón",
-      "papier",
-      "lepidlo",
-      "nožnice",
-      "tempery",
-      "fixky"
-    ],
-    "duration": "2 × 90 minút",
-    "difficulty": "stredná",
-    "motivation": "Ako vytvoríme scénu, ktorá má popredie, stred a pozadie? Ako rozlíšime postavy a prostredie?",
-    "procedure": [
-      "Rozhovor o betlehemskej scéne a jej častiach.",
-      "Návrh základnej priestorovej kompozície.",
-      "Tvorba architektúry a pozadia.",
-      "Vytvorenie postáv a ich umiestnenie v priestore.",
-      "Záverečné zjednotenie farbou a detailmi."
-    ],
-    "artists": [
-      {
-        "name": "Giotto",
-        "works": [
-          "Nativity scenes"
-        ],
-        "note": "rozprávanie príbehu v obrazovej scéne"
-      },
-      {
-        "name": "Majster Pavol z Levoče",
-        "works": [
-          "gotické oltárne scény"
-        ],
-        "note": "priestor, figúry a sakrálna atmosféra"
-      }
-    ],
-    "colors": [
-      "#8d6e63",
-      "#c9a66b",
-      "#f4eadf",
-      "#2c3e50"
-    ],
-    "standard": "Priestor, figúra, vzťah postavy a prostredia."
-  },
-  {
-    "id": "vianoce-svietnik-keramika",
-    "title": "Vianočný svietnik",
-    "grade": "4.–5. ročník",
-    "month": "december",
-    "methodSeries": "Materiál a objekt",
-    "technique": "modelovanie, keramika",
-    "area": "Priestorové vytváranie",
-    "goal": "Vytvoriť jednoduchý funkčný dekoratívny objekt s dôrazom na tvar a štruktúru.",
-    "theme": "Vianoce, svetlo, svietnik, keramika, objekt",
-    "materials": [
-      "hlina",
-      "špachtle",
-      "valček",
-      "voda",
-      "engoby alebo glazúry"
-    ],
-    "duration": "2 × 90 minút",
-    "difficulty": "stredná",
-    "motivation": "Ako môže predmet spojiť funkciu a výtvarný výraz? Aký tvar bude stabilný a zároveň zaujímavý?",
-    "procedure": [
-      "Ukážka jednoduchých keramických objektov.",
-      "Návrh tvaru svietnika.",
-      "Modelovanie základného objemu.",
-      "Vytvorenie otvoru a dekoratívnej štruktúry.",
-      "Povrchová úprava a príprava na výpal."
-    ],
-    "artists": [
-      {
-        "name": "Lucie Rie",
-        "works": [
-          "ceramic vessels"
-        ],
-        "note": "čistý tvar a cit pre materiál"
-      },
-      {
-        "name": "Eva Zeisel",
-        "works": [
-          "ceramic design"
-        ],
-        "note": "organické tvary a funkčný dizajn"
-      }
-    ],
-    "colors": [
-      "#5d4037",
-      "#a1887f",
-      "#d7ccc8",
-      "#ffcc80"
-    ],
-    "standard": "Objekt, materiál, funkcia, dekoratívnosť."
-  },
-  {
-    "id": "vianoce-ornament-pohladnica",
-    "title": "Vianočná pohľadnica s ornamentom",
+    "id": "real-jesen",
+    "title": "Jeseň – farebná atmosféra",
     "grade": "1.–3. ročník",
-    "month": "december",
-    "methodSeries": "Línia a rytmus",
-    "technique": "kresba, grafický návrh",
-    "area": "Plošné vytváranie",
-    "goal": "Vytvoriť rytmus a sviatočnú kompozíciu opakovaním línií a tvarov.",
-    "theme": "Vianoce, pohľadnica, ornament, rytmus, dekorácia",
+    "month": "október",
+    "methodSeries": "Farba",
+    "technique": "maľba, kresba, kombinovaná technika",
+    "area": "Farba, plocha, prírodný motív",
+    "goal": "Vnímať teplé jesenné farby a vyjadriť atmosféru ročného obdobia.",
+    "theme": "jeseň, listy, strom, krajina, teplé farby",
     "materials": [
-      "tvrdý papier",
-      "fixky",
+      "temperové farby",
       "pastelky",
-      "pravítko",
-      "zlaté pero"
+      "voskovky",
+      "papier A3",
+      "štetce"
     ],
     "duration": "90 minút",
-    "difficulty": "ľahká",
-    "motivation": "Ako sa z opakovania tvarov stáva vzor? Ako môže pohľadnica pôsobiť slávnostne?",
+    "difficulty": "stredná",
+    "motivation": "jeseň, listy, strom, krajina, teplé farby – pozorovanie, rozhovor a obrazová inšpirácia.",
     "procedure": [
-      "Pozorovanie jednoduchých ornamentov.",
-      "Výber hlavného motívu.",
-      "Opakovanie tvarov v kompozícii.",
-      "Doplnenie textu alebo symbolu.",
-      "Záverečné doladenie farebnosti."
+      "Pozorovanie jesenných farieb.",
+      "Výber farebnej škály.",
+      "Návrh kompozície.",
+      "Tvorba hlavnej farebnej plochy.",
+      "Doplnenie detailov a reflexia."
     ],
     "artists": [
+      {
+        "name": "Vincent van Gogh",
+        "works": [
+          "Mulberry Tree"
+        ],
+        "note": "expresívna farba a rukopis"
+      },
       {
         "name": "Gustav Klimt",
         "works": [
-          "The Tree of Life"
+          "Beech Forest I"
         ],
-        "note": "ornament, rytmus a dekoratívna plocha"
-      },
-      {
-        "name": "William Morris",
-        "works": [
-          "pattern designs"
-        ],
-        "note": "opakovaný vzor a plošná dekoratívnosť"
+        "note": "dekoratívna plocha a rytmus stromov"
       }
     ],
     "colors": [
-      "#b8860b",
-      "#c0392b",
-      "#f7dc6f",
-      "#2c3e50"
+      "#d9822b",
+      "#b94e2f",
+      "#f0b43c",
+      "#6b3f1d"
     ],
-    "standard": "Línia, rytmus, ornament, dekoratívna kompozícia."
+    "standard": "Farba, teplé farby, rytmus prírodných tvarov.",
+    "studentImages": [
+      "/student-work/jesen/jesen-01.jpg",
+      "/student-work/jesen/jesen-02.jpg",
+      "/student-work/jesen/jesen-03.jpg",
+      "/student-work/jesen/jesen-04.jpg",
+      "/student-work/jesen/jesen-05.jpg",
+      "/student-work/jesen/jesen-06.jpg",
+      "/student-work/jesen/jesen-07.jpg",
+      "/student-work/jesen/jesen-08.jpg",
+      "/student-work/jesen/jesen-09.jpg",
+      "/student-work/jesen/jesen-10.jpg",
+      "/student-work/jesen/jesen-11.jpg",
+      "/student-work/jesen/jesen-12.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
   },
   {
-    "id": "zimna-krajina-malba",
-    "title": "Zimná krajina",
-    "grade": "1.–2. ročník",
-    "month": "január",
-    "methodSeries": "Farba",
-    "technique": "maľba",
-    "area": "Výtvarný jazyk – farba",
-    "goal": "Vnímať studené farby a svetlé tóny v zimnej atmosfére.",
-    "theme": "zima, krajina, sneh, stromy, atmosféra",
+    "id": "real-sarkan",
+    "title": "Šarkan vo vetre",
+    "grade": "1.–3. ročník",
+    "month": "október",
+    "methodSeries": "Kompozícia",
+    "technique": "kresba, koláž, maľba",
+    "area": "Kompozícia, pohyb, línia",
+    "goal": "Vyjadriť pohyb a priestor pomocou línie, tvaru a farebnej kompozície.",
+    "theme": "šarkan, vietor, obloha, jeseň, pohyb",
     "materials": [
-      "tempery",
-      "biely papier",
-      "modrý papier",
-      "štetce",
-      "špongia"
+      "farebné papiere",
+      "pastelky",
+      "fixky",
+      "lepidlo",
+      "papier A3"
     ],
     "duration": "90 minút",
-    "difficulty": "ľahká",
-    "motivation": "Aké farby má zima? Ako namaľujeme ticho, chlad a sneh?",
+    "difficulty": "stredná",
+    "motivation": "šarkan, vietor, obloha, jeseň, pohyb – pozorovanie, rozhovor a obrazová inšpirácia.",
     "procedure": [
-      "Pozorovanie studených farieb.",
-      "Miešanie modrých, sivých a bielych tónov.",
-      "Maľba pozadia a horizontu.",
-      "Doplnenie stromov alebo domčekov.",
-      "Porovnanie pokojnej a dramatickej zimnej nálady."
+      "Rozhovor o pohybe a vetre.",
+      "Návrh šarkana.",
+      "Doplnenie oblohy a pohybových línií.",
+      "Farebné spracovanie.",
+      "Porovnanie dynamiky prác."
     ],
     "artists": [
       {
-        "name": "Claude Monet",
+        "name": "Henri Matisse",
         "works": [
-          "The Magpie"
+          "paper cut-outs"
         ],
-        "note": "svetlo, sneh a atmosféra"
+        "note": "jednoduchý tvar a farba"
       },
       {
-        "name": "Pieter Bruegel starší",
+        "name": "Joan Miró",
         "works": [
-          "Hunters in the Snow"
+          "Blue II"
         ],
-        "note": "zimná krajina a priestor"
+        "note": "hravé tvary a pohyb v ploche"
       }
     ],
     "colors": [
-      "#d9edf7",
-      "#7fb3d5",
-      "#eef7fb",
-      "#5d6d7e"
+      "#4fc3f7",
+      "#ff7043",
+      "#ffeb3b",
+      "#7e57c2"
     ],
-    "standard": "Farba, studené farby, nálada krajiny."
+    "standard": "Kompozícia, pohyb, línia, farebný kontrast.",
+    "studentImages": [
+      "/student-work/sarkan/sarkan-01.jpg",
+      "/student-work/sarkan/sarkan-02.jpg",
+      "/student-work/sarkan/sarkan-03.jpg",
+      "/student-work/sarkan/sarkan-04.jpg",
+      "/student-work/sarkan/sarkan-05.jpg",
+      "/student-work/sarkan/sarkan-06.jpg",
+      "/student-work/sarkan/sarkan-07.jpg",
+      "/student-work/sarkan/sarkan-08.jpg",
+      "/student-work/sarkan/sarkan-09.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+  },
+  {
+    "id": "real-ovocie",
+    "title": "Ovocie – tvar a farba",
+    "grade": "2.–4. ročník",
+    "month": "september",
+    "methodSeries": "Tvar a farba",
+    "technique": "kresba, maľba",
+    "area": "Zátišie, tvar, pozorovanie",
+    "goal": "Pozorovať tvar ovocia a vyjadriť jeho farebnosť a objem.",
+    "theme": "ovocie, zátišie, tvar, farba, pozorovanie",
+    "materials": [
+      "papier",
+      "pastelky",
+      "tempery",
+      "štetce",
+      "ceruzka"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "ovocie, zátišie, tvar, farba, pozorovanie – pozorovanie, rozhovor a obrazová inšpirácia.",
+    "procedure": [
+      "Pozorovanie ovocia.",
+      "Skica základného tvaru.",
+      "Farebné vrstvenie.",
+      "Doplnenie tieňa.",
+      "Hodnotenie objemu a farby."
+    ],
+    "artists": [
+      {
+        "name": "Paul Cézanne",
+        "works": [
+          "Still Life with Apples"
+        ],
+        "note": "zátišie a stavba tvaru"
+      },
+      {
+        "name": "Henri Matisse",
+        "works": [
+          "Still Life works"
+        ],
+        "note": "plošná farebnosť"
+      }
+    ],
+    "colors": [
+      "#c0392b",
+      "#f39c12",
+      "#7cb342",
+      "#6d4c41"
+    ],
+    "standard": "Tvar, farba, zátišie, jednoduchý objem.",
+    "studentImages": [
+      "/student-work/ovocie/ovocie-01.jpg",
+      "/student-work/ovocie/ovocie-02.jpg",
+      "/student-work/ovocie/ovocie-03.jpg",
+      "/student-work/ovocie/ovocie-04.jpg",
+      "/student-work/ovocie/ovocie-05.jpg",
+      "/student-work/ovocie/ovocie-06.jpg",
+      "/student-work/ovocie/ovocie-07.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+  },
+  {
+    "id": "real-pribeh-ciary",
+    "title": "Príbeh čiary",
+    "grade": "1.–2. ročník",
+    "month": "september",
+    "methodSeries": "Línia",
+    "technique": "kresba",
+    "area": "Výtvarný jazyk – línia",
+    "goal": "Objavovať výrazové možnosti línie a vytvoriť jednoduchý obrazový príbeh.",
+    "theme": "čiara, príbeh, pohyb, línia, kresba",
+    "materials": [
+      "papier",
+      "čierny fix",
+      "pastelky",
+      "ceruzka"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "čiara, príbeh, pohyb, línia, kresba – pozorovanie, rozhovor a obrazová inšpirácia.",
+    "procedure": [
+      "Voľná hra s čiarou.",
+      "Hľadanie rytmu a smeru.",
+      "Premena čiary na príbeh.",
+      "Doplnenie detailov.",
+      "Rozprávanie o obraze."
+    ],
+    "artists": [
+      {
+        "name": "Paul Klee",
+        "works": [
+          "Twittering Machine"
+        ],
+        "note": "línia ako pohyb a hravý znak"
+      },
+      {
+        "name": "Joan Miró",
+        "works": [
+          "Constellations"
+        ],
+        "note": "znak, čiara a fantázia"
+      }
+    ],
+    "colors": [
+      "#212121",
+      "#fdd835",
+      "#29b6f6",
+      "#ef5350"
+    ],
+    "standard": "Línia, rytmus, smer, výtvarné rozprávanie.",
+    "studentImages": [
+      "/student-work/pribeh-ciary/pribeh-ciary-01.jpg",
+      "/student-work/pribeh-ciary/pribeh-ciary-02.jpg",
+      "/student-work/pribeh-ciary/pribeh-ciary-03.jpg",
+      "/student-work/pribeh-ciary/pribeh-ciary-04.jpg",
+      "/student-work/pribeh-ciary/pribeh-ciary-05.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+  },
+  {
+    "id": "real-chrobaky",
+    "title": "Chrobáky – detail a rytmus",
+    "grade": "2.–4. ročník",
+    "month": "máj",
+    "methodSeries": "Tvar a štruktúra",
+    "technique": "kresba, maľba",
+    "area": "Prírodný motív, detail, štruktúra",
+    "goal": "Pozorovať stavbu tela hmyzu a využiť rytmus, symetriu a detail.",
+    "theme": "chrobáky, hmyz, detail, symetria, štruktúra",
+    "materials": [
+      "papier",
+      "ceruzka",
+      "fixky",
+      "tempery",
+      "lupa"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "chrobáky, hmyz, detail, symetria, štruktúra – pozorovanie, rozhovor a obrazová inšpirácia.",
+    "procedure": [
+      "Pozorovanie obrázkov hmyzu.",
+      "Skica základného tvaru.",
+      "Doplnenie častí tela.",
+      "Rytmické vzory na krovkách.",
+      "Farebné dokončenie."
+    ],
+    "artists": [
+      {
+        "name": "Albrecht Dürer",
+        "works": [
+          "Stag Beetle"
+        ],
+        "note": "detailné pozorovanie prírody"
+      },
+      {
+        "name": "Maria Sibylla Merian",
+        "works": [
+          "Insect studies"
+        ],
+        "note": "vedecká ilustrácia a estetika prírody"
+      }
+    ],
+    "colors": [
+      "#2e7d32",
+      "#8d6e63",
+      "#ffca28",
+      "#263238"
+    ],
+    "standard": "Tvar, detail, štruktúra, symetria.",
+    "studentImages": [
+      "/student-work/chrobaky/chrobaky-01.jpg",
+      "/student-work/chrobaky/chrobaky-02.jpg",
+      "/student-work/chrobaky/chrobaky-03.jpg",
+      "/student-work/chrobaky/chrobaky-04.jpg",
+      "/student-work/chrobaky/chrobaky-05.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+  },
+  {
+    "id": "real-zatisie-akryl",
+    "title": "Zátišie – akryl",
+    "grade": "4.–6. ročník",
+    "month": "november",
+    "methodSeries": "Farba a kompozícia",
+    "technique": "akryl, maľba",
+    "area": "Zátišie, kompozícia, farba",
+    "goal": "Vytvoriť maliarske zátišie so zreteľom na kompozíciu, tvar a farebné vzťahy.",
+    "theme": "zátišie, akryl, predmety, kompozícia, farba",
+    "materials": [
+      "akrylové farby",
+      "plátno alebo papier",
+      "štetce",
+      "paleta",
+      "predmety zátišia"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "zátišie, akryl, predmety, kompozícia, farba – pozorovanie, rozhovor a obrazová inšpirácia.",
+    "procedure": [
+      "Pozorovanie zátišia.",
+      "Kompozičná skica.",
+      "Nanesenie základných farebných plôch.",
+      "Modelovanie tvarov farbou.",
+      "Záverečné detaily a reflexia."
+    ],
+    "artists": [
+      {
+        "name": "Paul Cézanne",
+        "works": [
+          "Still Life with Apples"
+        ],
+        "note": "stavba tvaru a kompozícia"
+      },
+      {
+        "name": "Giorgio Morandi",
+        "works": [
+          "Still Life"
+        ],
+        "note": "pokojná kompozícia a jemné farebné vzťahy"
+      }
+    ],
+    "colors": [
+      "#795548",
+      "#ffcc80",
+      "#90a4ae",
+      "#263238"
+    ],
+    "standard": "Kompozícia, farba, zátišie, tvar a objem.",
+    "studentImages": [
+      "/student-work/zatisie-akryl/zatisie-akryl-01.jpg",
+      "/student-work/zatisie-akryl/zatisie-akryl-02.jpg",
+      "/student-work/zatisie-akryl/zatisie-akryl-03.jpg",
+      "/student-work/zatisie-akryl/zatisie-akryl-04.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
   }
 ];

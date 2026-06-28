@@ -1,14 +1,1 @@
-import { createMockImage } from "../lib/mockImage";
-
-export function ProjectCard({ project, onSelect, active }) {
-  return (
-    <button className={active ? "project-card active" : "project-card"} onClick={() => onSelect(project)}>
-      <img src={createMockImage(project.title, project.colors)} alt="" />
-      <div>
-        <h3>{project.title}</h3>
-        <p>{project.grade} · {project.technique} · {project.duration}</p>
-        <small>{project.methodSeries}</small>
-      </div>
-    </button>
-  );
-}
+import{createMockImage}from"../lib/mockImage";export function ProjectCard({project,onSelect,active}){const cover=project.studentImages?.[0]||createMockImage(project.title,project.colors);return <button className={active?"project-card active":"project-card"} onClick={()=>onSelect(project)}><img src={cover} alt=""/><div><h3>{project.title}</h3><p>{project.grade} · {project.technique} · {project.duration}</p><small>{project.studentImages?.length||0} fotiek · {project.methodSeries}</small></div></button>}
