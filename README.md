@@ -1,11 +1,30 @@
-# ZUŠ Art Atlas Alpha 1.1 – Deploy Ready
+# ZUŠ Art Atlas
 
-## Najjednoduchšie nasadenie cez Netlify Drop
-1. Rozbaľ ZIP.
-2. Otvor priečinok v termináli.
-3. Spusti:
-   npm install
-   npm run build
-4. Otvor https://app.netlify.com/drop
-5. Pretiahni vytvorený priečinok dist do okna.
-6. Otvor vzniknutý odkaz na iPhone.
+Digitálny asistent učiteľa výtvarného odboru ZUŠ.
+
+## Foundation 1.0
+
+Táto verzia je čistý základ aplikácie pripravený pre GitHub + Vercel.
+
+Obsahuje:
+- React + Vite,
+- prvú databázu výtvarných projektov,
+- vyhľadávanie podľa prirodzeného zadania,
+- detail projektu,
+- umelcov a významné diela,
+- inšpiračnú galériu,
+- koláž vytvorených prác,
+- PWA pripravenosť pre iPhone.
+
+## Lokálne spustenie
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```

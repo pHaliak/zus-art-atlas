@@ -1,11 +1,13 @@
 {
   "name": "ZUŠ Art Atlas",
   "short_name": "Art Atlas",
+  "description": "Digitálny asistent učiteľa výtvarného odboru ZUŠ",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f8f5ef",
   "theme_color": "#a85d33",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/icon.svg",
