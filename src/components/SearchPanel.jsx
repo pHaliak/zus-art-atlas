@@ -1,12 +1,11 @@
 import { Search } from "lucide-react";
 
 const QUICK_SEARCHES = [
-  "1. ročník jeseň maľba",
-  "2. ročník ryby koláž",
-  "3. ročník mesto kresba",
-  "portrét emócia kresba",
-  "zima maľba",
-  "hudba abstrakcia maľba",
+  "vianoce anjel",
+  "vianoce betlehem",
+  "vianoce keramika svietnik",
+  "vianočná pohľadnica ornament",
+  "zimná krajina maľba",
 ];
 
 export function SearchPanel({ query, setQuery, onSearch, onQuickSearch }) {
@@ -24,7 +23,6 @@ export function SearchPanel({ query, setQuery, onSearch, onQuickSearch }) {
         />
         <button onClick={onSearch}>Nájsť</button>
       </div>
-
       <div className="quick-actions">
         {QUICK_SEARCHES.map((item) => (
           <button key={item} onClick={() => onQuickSearch(item)}>
@@ -32,8 +30,6 @@ export function SearchPanel({ query, setQuery, onSearch, onQuickSearch }) {
           </button>
         ))}
       </div>
-
-      <p>Výsledok nikdy nezostane prázdny. Aplikácia vždy zobrazí najbližšie vhodné návrhy.</p>
     </section>
   );
 }

@@ -2,29 +2,11 @@
 
 Digitálny asistent učiteľa výtvarného odboru ZUŠ.
 
-## Foundation 1.0
-
-Táto verzia je čistý základ aplikácie pripravený pre GitHub + Vercel.
+## v0.2.1 – Vianočná kolekcia
 
 Obsahuje:
-- React + Vite,
-- prvú databázu výtvarných projektov,
-- vyhľadávanie podľa prirodzeného zadania,
-- detail projektu,
-- umelcov a významné diela,
-- inšpiračnú galériu,
-- koláž vytvorených prác,
-- PWA pripravenosť pre iPhone.
-
-## Lokálne spustenie
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
+- vianočné projekty,
+- galériu náhľadov,
+- referenčné diela,
+- miesto pre žiacke práce,
+- pripravený základ pre ďalšie nahrávanie fotiek.

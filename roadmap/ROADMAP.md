@@ -1,25 +1,15 @@
 # Roadmap
 
-## Foundation 1.0
-- čistá React + Vite architektúra,
-- prvá databáza projektov,
-- základné vyhľadávanie,
-- profil projektu,
+## v0.2.1
+- vianočná kolekcia,
 - galéria náhľadov,
-- optimalizácia pre iPhone.
+- pripravená štruktúra pre fotky žiakov.
 
-## Alpha 1
-- reálne obrazové prílohy,
-- rozšírená databáza,
-- ročný plán,
-- základné ukladanie obľúbených.
+## v0.2.2
+- reálne fotografie žiackych prác,
+- základné tagovanie fotografií,
+- priradenie fotiek k projektom.
 
-## Alpha 2
-- nahrávanie žiackych prác,
-- koláže podľa témy a techniky,
-- poznámky učiteľa po hodine.
-
-## Beta
-- používateľské účty,
-- cloudové úložisko,
-- export príprav.
+## v0.3
+- rozšírený archív školy,
+- filtrovanie fotografií podľa techniky a témy.

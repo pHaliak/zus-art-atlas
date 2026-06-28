@@ -1,8 +1,8 @@
 import { createMockImage } from "../lib/mockImage";
 
-export function ProjectCard({ project, onSelect }) {
+export function ProjectCard({ project, onSelect, active }) {
   return (
-    <button className="project-card" onClick={() => onSelect(project)}>
+    <button className={active ? "project-card active" : "project-card"} onClick={() => onSelect(project)}>
       <img src={createMockImage(project.title, project.colors)} alt="" />
       <div>
         <h3>{project.title}</h3>

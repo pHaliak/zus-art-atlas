@@ -4,7 +4,7 @@ export function Header() {
       <div className="logo">A</div>
       <div>
         <strong>ZUŠ Art Atlas</strong>
-        <span>Foundation 1.0</span>
+        <span>v0.2.1 · Vianočná kolekcia</span>
       </div>
     </header>
   );
