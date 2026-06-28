@@ -1,37 +1,29 @@
-// src/components/Filters.jsx
-import React from 'react';
-import { THEME_FILTERS } from '../data/filters';
-import './Filters.css';
+import { grades, methodSeries, techniques, themes } from "../data/filters";
 
-const Filters = ({ selectedThemes, onThemeChange }) => {
-  const handleThemeClick = (themeName) => {
-    onThemeChange(themeName);
-  };
+function Select({ label, value, options, onChange }) {
+  return (
+    <label>
+      <span>{label}</span>
+      <select value={value} onChange={(event) => onChange(event.target.value)}>
+        <option value="">Všetko</option>
+        {options.map((option) => <option key={option} value={option}>{option}</option>)}
+      </select>
+    </label>
+  );
+}
+
+export function Filters({ filters, setFilters }) {
+  function update(key, value) {
+    setFilters((current) => ({ ...current, [key]: value }));
+  }
 
   return (
-    <div className="filters-container">
-      <h2>Filter by Theme</h2>
-      <div className="theme-buttons">
-        {THEME_FILTERS.map((theme) => (
-          <button
-            key={theme.name}
-            className={`theme-btn ${selectedThemes.includes(theme.name) ? 'active' : ''}`}
-            onClick={() => handleThemeClick(theme.name)}
-            style={{
-              borderColor: theme.color,
-              color: selectedThemes.includes(theme.name) ? theme.color : '#333',
-              backgroundColor: selectedThemes.includes(theme.name)
-                ? `${theme.color}15`
-                : 'transparent',
-            }}
-          >
-            <span className="theme-dot" style={{ backgroundColor: theme.color }}></span>
-            {theme.name}
-          </button>
-        ))}
-      </div>
-    </div>
+    <section className="filters">
+      <Select label="Téma" value={filters.theme} options={themes} onChange={(value) => update("theme", value)} />
+      <Select label="Ročník" value={filters.grade} options={grades} onChange={(value) => update("grade", value)} />
+      <Select label="Technika" value={filters.technique} options={techniques} onChange={(value) => update("technique", value)} />
+      <Select label="Metodický rad" value={filters.methodSeries} options={methodSeries} onChange={(value) => update("methodSeries", value)} />
+      <button className="reset" onClick={() => setFilters({ grade: "", technique: "", methodSeries: "", theme: "" })}>Vyčistiť</button>
+    </section>
   );
-};
-
-export default Filters;
+}

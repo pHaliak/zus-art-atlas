@@ -1,148 +1,78 @@
-// src/components/ReferenceWorks.jsx
-import React, { useState, useEffect } from 'react';
-import './ReferenceWorks.css';
+import { useEffect, useState } from "react";
+import { createMockImage } from "../lib/mockImage";
 
-const ReferenceWorks = ({ projectTitle }) => {
-  const [artworks, setArtworks] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
+async function fetchAicWork(query) {
+  const searchUrl = `https://api.artic.edu/api/v1/artworks/search?q=${encodeURIComponent(query)}&query[term][is_public_domain]=true&limit=1&fields=id,title,artist_display,image_id,date_display`;
+  const response = await fetch(searchUrl);
+  if (!response.ok) throw new Error("AIC search failed");
+  const data = await response.json();
+  const item = data?.data?.[0];
+  if (!item?.image_id) return null;
 
-  const CACHE_KEY = `aic_artworks_${projectTitle}`;
-  const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days in ms
+  return {
+    title: item.title,
+    artist: item.artist_display,
+    date: item.date_display,
+    image: `https://www.artic.edu/iiif/2/${item.image_id}/full/600,/0/default.jpg`,
+    source: "Art Institute of Chicago",
+    url: `https://www.artic.edu/artworks/${item.id}`,
+  };
+}
+
+function ReferenceCard({ work, project, index }) {
+  const [remoteWork, setRemoteWork] = useState(null);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    const fetchArtworks = async () => {
-      setLoading(true);
-      setError(null);
-
-      // Check cache first
-      const cached = localStorage.getItem(CACHE_KEY);
-      if (cached) {
-        const { data, timestamp } = JSON.parse(cached);
-        if (Date.now() - timestamp < CACHE_DURATION) {
-          setArtworks(data);
-          setLoading(false);
-          return;
-        }
-      }
-
-      try {
-        // Art Institute of Chicago API
-        const response = await fetch(
-          `https://api.artic.edu/api/v1/artworks/search?q=${encodeURIComponent(projectTitle)}&limit=12&fields=id,title,image_id,artist_display,date_display`
-        );
-
-        if (!response.ok) throw new Error('API error');
-
-        const data = await response.json();
-        const works = data.data || [];
-
-        // Cache the results
-        localStorage.setItem(
-          CACHE_KEY,
-          JSON.stringify({
-            data: works,
-            timestamp: Date.now(),
-          })
-        );
-
-        setArtworks(works);
-      } catch (err) {
-        setError('Unable to load reference artworks');
-        console.error('AIC API Error:', err);
-      } finally {
-        setLoading(false);
-      }
+    let active = true;
+    fetchAicWork(work.query)
+      .then((result) => {
+        if (active) setRemoteWork(result);
+      })
+      .catch(() => {
+        if (active) setFailed(true);
+      });
+    return () => {
+      active = false;
     };
+  }, [work.query]);
 
-    if (projectTitle) {
-      fetchArtworks();
-    }
-  }, [projectTitle, CACHE_KEY]);
-
-  if (loading) {
-    return (
-      <div className="reference-works">
-        <h3>Reference Artworks</h3>
-        <div className="loading-skeleton">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="skeleton-item"></div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  if (error || artworks.length === 0) {
-    return (
-      <div className="reference-works">
-        <h3>Reference Artworks</h3>
-        <p className="no-results">{error || 'No reference artworks found'}</p>
-      </div>
-    );
-  }
-
-  const itemsPerPage = 4;
-  const totalPages = Math.ceil(artworks.length / itemsPerPage);
-  const startIdx = (currentPage - 1) * itemsPerPage;
-  const displayedArtworks = artworks.slice(startIdx, startIdx + itemsPerPage);
-
-  const getImageUrl = (imageId) => {
-    return imageId
-      ? `https://www.artic.edu/iiif/2/${imageId}/full/400,/0/default.jpg`
-      : null;
-  };
+  const image = remoteWork?.image || createMockImage(work.artist, project.colors, index + 8);
 
   return (
-    <div className="reference-works">
-      <h3>Reference Artworks from Art Institute of Chicago</h3>
-
-      <div className="artworks-grid">
-        {displayedArtworks.map((artwork) => {
-          const imageUrl = getImageUrl(artwork.image_id);
-          return (
-            <div key={artwork.id} className="artwork-card">
-              {imageUrl ? (
-                <img src={imageUrl} alt={artwork.title} />
-              ) : (
-                <div className="no-image">No image available</div>
-              )}
-              <div className="artwork-info">
-                <h4>{artwork.title}</h4>
-                {artwork.artist_display && (
-                  <p className="artist">{artwork.artist_display}</p>
-                )}
-                {artwork.date_display && (
-                  <p className="date">{artwork.date_display}</p>
-                )}
-              </div>
-            </div>
-          );
-        })}
+    <article className="reference-card">
+      <img src={image} alt="" />
+      <div>
+        <b>{remoteWork?.title || work.title}</b>
+        <span>{remoteWork?.artist || work.artist}</span>
+        {remoteWork?.date && <small>{remoteWork.date}</small>}
+        <p>{work.why}</p>
+        {remoteWork?.url ? (
+          <a href={remoteWork.url} target="_blank" rel="noreferrer">Otvoriť zdroj</a>
+        ) : (
+          <small>{failed ? "Náhľad zo zdroja sa nepodarilo načítať." : "Načítavam open-access náhľad..."}</small>
+        )}
       </div>
-
-      {totalPages > 1 && (
-        <div className="pagination">
-          <button
-            onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-            disabled={currentPage === 1}
-          >
-            ← Previous
-          </button>
-          <span>
-            Page {currentPage} of {totalPages}
-          </span>
-          <button
-            onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-            disabled={currentPage === totalPages}
-          >
-            Next →
-          </button>
-        </div>
-      )}
-    </div>
+    </article>
   );
-};
+}
 
-export default ReferenceWorks;
+export function ReferenceWorks({ project }) {
+  const works = project.referenceWorks || [];
+
+  if (!works.length) {
+    return null;
+  }
+
+  return (
+    <section className="panel">
+      <h3>Referenčné diela autorov</h3>
+      <div className="reference-grid">
+        {works.map((work, index) => (
+          <ReferenceCard key={`${work.artist}-${work.title}`} work={work} project={project} index={index} />
+        ))}
+      </div>
+      <p className="hint">Tieto náhľady sa načítavajú z open-access kolekcií. Ak sa niektorý obrázok nenačíta, aplikácia zobrazí náhradný vizuál.</p>
+    </section>
+  );
+}
