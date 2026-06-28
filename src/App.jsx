@@ -1,1 +1,72 @@
-import{useMemo,useState}from"react";import{Header}from"./components/Header";import{SearchPanel}from"./components/SearchPanel";import{Filters}from"./components/Filters";import{ProjectCard}from"./components/ProjectCard";import{ProjectDetail}from"./components/ProjectDetail";import{projects}from"./data/projects";import{searchProjects}from"./lib/search";import"./styles/app.css";export function App(){const[query,setQuery]=useState("jeseň");const[filters,setFilters]=useState({grade:"",technique:"",methodSeries:"",theme:""});const[favoriteIds,setFavoriteIds]=useState([]);const results=useMemo(()=>searchProjects(projects,query,filters),[query,filters]);const[selectedProject,setSelectedProject]=useState(projects[0]);function handleSearch(){setSelectedProject(results[0]||projects[0])}function handleQuickSearch(value){setQuery(value);setSelectedProject(searchProjects(projects,value,filters)[0]||projects[0])}function toggleFavorite(id){setFavoriteIds(current=>current.includes(id)?current.filter(item=>item!==id):[...current,id])}return <div className="app"><Header/><SearchPanel query={query} setQuery={setQuery} onSearch={handleSearch} onQuickSearch={handleQuickSearch}/><Filters filters={filters} setFilters={setFilters}/><section className="workspace"><aside className="results"><h2>Najlepšie návrhy</h2><p className="count">{results.length} projektov · reálne galérie</p>{results.map(project=><ProjectCard key={project.id} project={project} onSelect={setSelectedProject} active={project.id===selectedProject.id}/>)}</aside><ProjectDetail project={selectedProject} isFavorite={favoriteIds.includes(selectedProject.id)} onToggleFavorite={toggleFavorite}/></section></div>}
+// src/App.jsx
+import React, { useState, useMemo } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ProjectList from './components/ProjectList';
+import ProjectDetail from './components/ProjectDetail';
+import Filters from './components/Filters';
+import SearchBar from './components/SearchBar';
+import { searchProjects } from './lib/search';
+import { projectsData } from './data/projects';
+import './App.css';
+
+function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedThemes, setSelectedThemes] = useState([]);
+
+  const filteredProjects = useMemo(() => {
+    return searchProjects(projectsData, searchQuery, selectedThemes);
+  }, [searchQuery, selectedThemes]);
+
+  const handleThemeChange = (themeName) => {
+    setSelectedThemes((prevThemes) =>
+      prevThemes.includes(themeName)
+        ? prevThemes.filter((t) => t !== themeName)
+        : [...prevThemes, themeName]
+    );
+  };
+
+  return (
+    <Router>
+      <div className="app">
+        <header className="app-header">
+          <h1>
+            <Link to="/">🎨 ZUŠ Art Atlas</Link>
+          </h1>
+          <p className="subtitle">Basic Art School Project Gallery</p>
+        </header>
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="home-container">
+                <SearchBar
+                  searchQuery={searchQuery}
+                  onSearchChange={setSearchQuery}
+                />
+                <Filters
+                  selectedThemes={selectedThemes}
+                  onThemeChange={handleThemeChange}
+                />
+                <ProjectList
+                  projects={filteredProjects}
+                  totalProjects={projectsData.length}
+                />
+              </div>
+            }
+          />
+          <Route
+            path="/project/:id"
+            element={<ProjectDetail projects={projectsData} />}
+          />
+        </Routes>
+
+        <footer className="app-footer">
+          <p>© 2024 ZUŠ Art Atlas. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
