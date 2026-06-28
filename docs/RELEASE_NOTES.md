@@ -1,14 +1,10 @@
-# Release Notes – v0.2.3
+# Release Notes – v0.2.3.1 Graphics Fix
 
-## Nové
-- Pridané triedenie podľa témy.
-- Filter „Téma“ je teraz prvý v hornej lište filtrov.
-- Projekty majú novú položku `themeCategory`.
-- Pridaná nová sekcia „Referenčné diela autorov“.
-- Referenčné diela sa pokúšajú načítať reálne open-access náhľady z Art Institute of Chicago API.
-- Ak sa náhľad nenačíta, aplikácia použije náhradný vizuál.
+## Oprava
+- Odstránená závislosť referenčných náhľadov od externého API.
+- Pridaný bezpečný komponent `SafeImage`.
+- Ak sa reálna fotografia nenačíta, zobrazí sa lokálny náhradný vizuál.
+- Referenčné diela teraz používajú stabilné lokálne náhľady.
 
-## Ďalej
-- Dopĺňať presné open-access diela z viacerých zdrojov.
-- Vytvoriť vlastnú cache referenčných obrázkov.
-- Pridať fullscreen galériu.
+## Prečo
+Vo verzii v0.2.3 sa stránka načítala, ale niektoré grafické časti sa nemuseli zobraziť kvôli externým obrázkom alebo cestám k súborom po deployi.
