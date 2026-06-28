@@ -1,10 +1,25 @@
-# Release Notes – v0.2.3.1 Graphics Fix
+# Release Notes – Alpha 2.1 Stable
 
-## Oprava
-- Odstránená závislosť referenčných náhľadov od externého API.
-- Pridaný bezpečný komponent `SafeImage`.
-- Ak sa reálna fotografia nenačíta, zobrazí sa lokálny náhradný vizuál.
-- Referenčné diela teraz používajú stabilné lokálne náhľady.
+## Cieľ
+Stabilná oprava po problémoch vo v0.2.3.
 
-## Prečo
-Vo verzii v0.2.3 sa stránka načítala, ale niektoré grafické časti sa nemuseli zobraziť kvôli externým obrázkom alebo cestám k súborom po deployi.
+## Zachované
+- reálne fotky žiackych prác,
+- vyhľadávanie,
+- detail projektu,
+- galérie,
+- pomôcky,
+- motivácia,
+- postup.
+
+## Pridané
+- bezpečný filter podľa témy,
+- položka témy v detaile projektu,
+- textové referenčné diela autorov.
+
+## Zámerne odstránené / odložené
+- externé API pre obrázky diel,
+- rizikové komponenty `SafeImage` a `ReferenceWorks`.
+
+## Odporúčaný commit
+`Alpha 2.1 Stable`

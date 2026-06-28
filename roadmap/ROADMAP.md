@@ -1,15 +1,16 @@
 # Roadmap
 
-## v0.2.3
+## Alpha 2.1 Stable
+- stabilizácia,
 - filter podľa témy,
-- prvé open-access referenčné diela.
+- textové referenčné diela.
 
-## v0.2.4
+## Alpha 2.2
 - fullscreen galéria,
-- ručné označenie titulnej fotografie,
-- presnejšie referenčné zdroje.
+- lepšie označenie techník,
+- výber titulnej fotografie projektu.
 
-## v0.3
+## Alpha 3
+- overené open-access obrázky diel,
 - archív školy,
-- väčšia databáza fotiek,
-- export príprav.
+- väčšia databáza projektov.

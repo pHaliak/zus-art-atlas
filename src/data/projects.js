@@ -69,14 +69,12 @@ export const projects = [
       {
         "artist": "Vincent van Gogh",
         "title": "Mulberry Tree",
-        "query": "Vincent van Gogh Mulberry Tree",
-        "why": "expresívna farba a maliarsky rukopis vhodný pri jesennej téme"
+        "note": "expresívna farba, rukopis a jesenná farebnosť"
       },
       {
         "artist": "Gustav Klimt",
         "title": "Beech Forest",
-        "query": "Gustav Klimt Beech Forest",
-        "why": "dekoratívna plocha a rytmus stromov"
+        "note": "rytmus stromov, plošnosť a dekoratívna farebnosť"
       }
     ]
   },
@@ -147,14 +145,12 @@ export const projects = [
       {
         "artist": "Henri Matisse",
         "title": "Cut-outs",
-        "query": "Henri Matisse cut outs",
-        "why": "jednoduchý tvar, plošná farba a kompozícia"
+        "note": "jednoduchý tvar, plocha a čistá farba"
       },
       {
         "artist": "Joan Miró",
-        "title": "Blue II / Constellations",
-        "query": "Joan Miro blue",
-        "why": "hravé tvary, pohyb a rytmus v ploche"
+        "title": "Constellations",
+        "note": "pohyb, línia, znak a hravosť"
       }
     ]
   },
@@ -223,14 +219,12 @@ export const projects = [
       {
         "artist": "Paul Cézanne",
         "title": "Still Life with Apples",
-        "query": "Paul Cezanne Still Life Apples",
-        "why": "zátišie, stavba tvaru a farebné vzťahy"
+        "note": "zátišie, stavba tvaru a farebné vzťahy"
       },
       {
         "artist": "Henri Matisse",
         "title": "Still Life",
-        "query": "Henri Matisse still life",
-        "why": "plošná farebnosť a dekoratívny prístup k predmetom"
+        "note": "plošná farebnosť a dekoratívny prístup"
       }
     ]
   },
@@ -296,14 +290,12 @@ export const projects = [
       {
         "artist": "Paul Klee",
         "title": "Twittering Machine",
-        "query": "Paul Klee Twittering Machine",
-        "why": "línia ako pohyb, znak a výtvarné rozprávanie"
+        "note": "línia ako pohyb a výtvarné rozprávanie"
       },
       {
         "artist": "Joan Miró",
         "title": "Constellations",
-        "query": "Joan Miro Constellations",
-        "why": "čiara, znak a fantazijný priestor"
+        "note": "čiara, znak a fantázia"
       }
     ]
   },
@@ -370,14 +362,12 @@ export const projects = [
       {
         "artist": "Albrecht Dürer",
         "title": "Stag Beetle",
-        "query": "Albrecht Durer Stag Beetle",
-        "why": "detailné pozorovanie prírody a kresba hmyzu"
+        "note": "detailné pozorovanie prírody a kresba hmyzu"
       },
       {
         "artist": "Maria Sibylla Merian",
-        "title": "Insect studies",
-        "query": "Maria Sibylla Merian insects",
-        "why": "vedecká ilustrácia, detail a estetika prírodného motívu"
+        "title": "Insect Studies",
+        "note": "vedecká ilustrácia, detail a štruktúra"
       }
     ]
   },
@@ -443,14 +433,12 @@ export const projects = [
       {
         "artist": "Paul Cézanne",
         "title": "Still Life with Apples",
-        "query": "Paul Cezanne Still Life Apples",
-        "why": "kompozícia, objem a maliarska stavba tvaru"
+        "note": "kompozícia, objem a maliarska stavba tvaru"
       },
       {
         "artist": "Giorgio Morandi",
         "title": "Still Life",
-        "query": "Giorgio Morandi Still Life",
-        "why": "pokojná kompozícia a jemné farebné vzťahy"
+        "note": "pokojná kompozícia a jemné farebné vzťahy"
       }
     ]
   }

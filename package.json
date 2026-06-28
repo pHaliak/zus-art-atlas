@@ -1,6 +1,6 @@
 {
   "name": "zus-art-atlas",
-  "version": "0.2.3.1",
+  "version": "0.2.4-alpha.2.1-stable",
   "private": true,
   "type": "module",
   "scripts": {

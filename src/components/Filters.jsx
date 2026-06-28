@@ -23,7 +23,7 @@ export function Filters({ filters, setFilters }) {
       <Select label="Ročník" value={filters.grade} options={grades} onChange={(value) => update("grade", value)} />
       <Select label="Technika" value={filters.technique} options={techniques} onChange={(value) => update("technique", value)} />
       <Select label="Metodický rad" value={filters.methodSeries} options={methodSeries} onChange={(value) => update("methodSeries", value)} />
-      <button className="reset" onClick={() => setFilters({ grade: "", technique: "", methodSeries: "", theme: "" })}>Vyčistiť</button>
+      <button className="reset" onClick={() => setFilters({ theme: "", grade: "", technique: "", methodSeries: "" })}>Vyčistiť</button>
     </section>
   );
 }

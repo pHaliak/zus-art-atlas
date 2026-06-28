@@ -1,8 +1,9 @@
 # ZUŠ Art Atlas
 
-## v0.2.3.1 – Graphics Fix
+## Alpha 2.1 Stable
 
-Opravná verzia po v0.2.3:
-- bezpečné zobrazovanie obrázkov,
-- lokálne záložné náhľady,
-- stabilnejšie galérie.
+Stabilná verzia:
+- reálne galérie žiackych prác,
+- filter podľa témy,
+- textové referenčné diela,
+- bez externých obrázkov a bez rizikových API volaní.
