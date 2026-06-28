@@ -63,7 +63,22 @@ export const projects = [
       "/student-work/jesen/jesen-11.jpg",
       "/student-work/jesen/jesen-12.jpg"
     ],
-    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Jeseň",
+    "referenceWorks": [
+      {
+        "artist": "Vincent van Gogh",
+        "title": "Mulberry Tree",
+        "query": "Vincent van Gogh Mulberry Tree",
+        "why": "expresívna farba a maliarsky rukopis vhodný pri jesennej téme"
+      },
+      {
+        "artist": "Gustav Klimt",
+        "title": "Beech Forest",
+        "query": "Gustav Klimt Beech Forest",
+        "why": "dekoratívna plocha a rytmus stromov"
+      }
+    ]
   },
   {
     "id": "real-sarkan",
@@ -126,7 +141,22 @@ export const projects = [
       "/student-work/sarkan/sarkan-08.jpg",
       "/student-work/sarkan/sarkan-09.jpg"
     ],
-    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Šarkan",
+    "referenceWorks": [
+      {
+        "artist": "Henri Matisse",
+        "title": "Cut-outs",
+        "query": "Henri Matisse cut outs",
+        "why": "jednoduchý tvar, plošná farba a kompozícia"
+      },
+      {
+        "artist": "Joan Miró",
+        "title": "Blue II / Constellations",
+        "query": "Joan Miro blue",
+        "why": "hravé tvary, pohyb a rytmus v ploche"
+      }
+    ]
   },
   {
     "id": "real-ovocie",
@@ -187,7 +217,22 @@ export const projects = [
       "/student-work/ovocie/ovocie-06.jpg",
       "/student-work/ovocie/ovocie-07.jpg"
     ],
-    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Ovocie",
+    "referenceWorks": [
+      {
+        "artist": "Paul Cézanne",
+        "title": "Still Life with Apples",
+        "query": "Paul Cezanne Still Life Apples",
+        "why": "zátišie, stavba tvaru a farebné vzťahy"
+      },
+      {
+        "artist": "Henri Matisse",
+        "title": "Still Life",
+        "query": "Henri Matisse still life",
+        "why": "plošná farebnosť a dekoratívny prístup k predmetom"
+      }
+    ]
   },
   {
     "id": "real-pribeh-ciary",
@@ -245,7 +290,22 @@ export const projects = [
       "/student-work/pribeh-ciary/pribeh-ciary-04.jpg",
       "/student-work/pribeh-ciary/pribeh-ciary-05.jpg"
     ],
-    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Príbeh čiary",
+    "referenceWorks": [
+      {
+        "artist": "Paul Klee",
+        "title": "Twittering Machine",
+        "query": "Paul Klee Twittering Machine",
+        "why": "línia ako pohyb, znak a výtvarné rozprávanie"
+      },
+      {
+        "artist": "Joan Miró",
+        "title": "Constellations",
+        "query": "Joan Miro Constellations",
+        "why": "čiara, znak a fantazijný priestor"
+      }
+    ]
   },
   {
     "id": "real-chrobaky",
@@ -304,7 +364,22 @@ export const projects = [
       "/student-work/chrobaky/chrobaky-04.jpg",
       "/student-work/chrobaky/chrobaky-05.jpg"
     ],
-    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Chrobáky",
+    "referenceWorks": [
+      {
+        "artist": "Albrecht Dürer",
+        "title": "Stag Beetle",
+        "query": "Albrecht Durer Stag Beetle",
+        "why": "detailné pozorovanie prírody a kresba hmyzu"
+      },
+      {
+        "artist": "Maria Sibylla Merian",
+        "title": "Insect studies",
+        "query": "Maria Sibylla Merian insects",
+        "why": "vedecká ilustrácia, detail a estetika prírodného motívu"
+      }
+    ]
   },
   {
     "id": "real-zatisie-akryl",
@@ -362,6 +437,21 @@ export const projects = [
       "/student-work/zatisie-akryl/zatisie-akryl-03.jpg",
       "/student-work/zatisie-akryl/zatisie-akryl-04.jpg"
     ],
-    "source": "Fotografie žiackych prác – názvy súborov podľa témy"
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Zátišie",
+    "referenceWorks": [
+      {
+        "artist": "Paul Cézanne",
+        "title": "Still Life with Apples",
+        "query": "Paul Cezanne Still Life Apples",
+        "why": "kompozícia, objem a maliarska stavba tvaru"
+      },
+      {
+        "artist": "Giorgio Morandi",
+        "title": "Still Life",
+        "query": "Giorgio Morandi Still Life",
+        "why": "pokojná kompozícia a jemné farebné vzťahy"
+      }
+    ]
   }
 ];

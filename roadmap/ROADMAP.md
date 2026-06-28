@@ -1,14 +1,15 @@
 # Roadmap
 
-## v0.2.2
-- reálne fotogalérie podľa tém,
-- automatické zaradenie podľa názvov súborov.
-
 ## v0.2.3
+- filter podľa témy,
+- prvé open-access referenčné diela.
+
+## v0.2.4
 - fullscreen galéria,
-- základné tagovanie fotografií,
-- možnosť označiť najlepší náhľad projektu.
+- ručné označenie titulnej fotografie,
+- presnejšie referenčné zdroje.
 
 ## v0.3
-- väčší archív školy,
-- open-access referenčné diela.
+- archív školy,
+- väčšia databáza fotiek,
+- export príprav.
