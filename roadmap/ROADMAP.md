@@ -1,7 +1,11 @@
 # Roadmap
 
-## v1.2.4
-- opravený CMS editor metadát.
-
 ## v1.2.5
-- doladenie podľa testovania.
+- funkčné tlačidlo + Pridať práce,
+- lokálne pridávanie fotografií do galérie.
+
+## v1.2.6
+- doladenie CMS a lokálnych úprav podľa testovania.
+
+## v1.3
+- trvalejšie riešenie importu do projektu po stabilizácii core.

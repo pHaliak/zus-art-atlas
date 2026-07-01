@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Palette, Plus, Printer, Star } from "lucide-react";
 import { createMockImage } from "../lib/mockImage";
 import { ImageLightbox } from "./ImageLightbox";
 import { ProjectCmsEditor } from "./ProjectCmsEditor";
+import { filesToDataUrls } from "../lib/localStudentWorks";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
@@ -16,6 +17,8 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
   const [tab, setTab] = useState("tema");
   const [selectedImage, setSelectedImage] = useState(null);
   const [editing, setEditing] = useState(false);
+  const fileInputRef = useRef(null);
+  const addedCount = (project.studentImages || []).filter((src) => String(src).startsWith("data:image/")).length;
   const mainImage = project.studentImages?.[0] || createMockImage(project.title, project.colors, 0);
 
   function handleSave(data) {
@@ -60,7 +63,8 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
           <div className="actions">
             <button onClick={() => window.print()}><Printer size={18} /> Tlačiť</button>
             <button className={isFavorite ? "secondary favorite-on" : "secondary"} onClick={() => onToggleFavorite(project.id)}><Star size={18} /> {isFavorite ? "Obľúbené" : "Uložiť"}</button>
-            <button className="secondary"><Plus size={18} /> Pridať práce</button>
+            <button className="secondary" onClick={() => fileInputRef.current?.click()}><Plus size={18} /> Pridať práce</button>
+            <input ref={fileInputRef} className="hidden-file-input" type="file" accept="image/*" multiple onChange={handleFilesSelected} />
           </div>
         </div>
       </section>

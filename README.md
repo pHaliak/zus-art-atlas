@@ -1,5 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.4 CMS Metadata FIX
+## v1.2.5 – Add Works
 
-Opravená verzia CMS editora metadát. Vychádza zo stabilnej v1.2.3 Lightbox.
+Tlačidlo + Pridať práce teraz otvorí výber fotografií a pridá ich do galérie aktuálnej témy lokálne v prehliadači.

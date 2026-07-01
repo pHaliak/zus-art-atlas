@@ -1,14 +1,15 @@
-# Release Notes – v1.2.4 CMS Metadata FIX
+# Release Notes – v1.2.5 Add Works
 
 ## Oprava
-- Opravená biela obrazovka z predchádzajúcej v1.2.4.
-- Editor metadát je napojený konzervatívne na stabilnú v1.2.3.
+- Tlačidlo **+ Pridať práce** už nie je iba vizuálne.
+- Po kliknutí otvorí výber obrázkov v počítači.
+- Vybrané obrázky sa pridajú do galérie aktuálnej témy.
+- Obrázky sa uložia lokálne v prehliadači cez `localStorage`.
 
-## Nové
-- Tlačidlo **Upraviť údaje** v detaile témy.
-- Upravovať sa dajú textové údaje po kľúčové slová.
-- Fotografie zostávajú statické.
-- Úpravy sa ukladajú lokálne v prehliadači.
+## Dôležité
+- Toto je lokálne pridanie na danom počítači a v danom prehliadači.
+- Nie je to ešte zápis do GitHub projektu.
+- Oficiálne importy do databázy naďalej robíme naším doterajším ZIP postupom.
 
 ## Odporúčaný commit
-`v1.2.4 CMS Metadata FIX`
+`v1.2.5 Add Works`

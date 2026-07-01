@@ -8,8 +8,10 @@ import { projects } from "./data/projects";
 import { searchProjects } from "./lib/search";
 import { applyProjectOverrides, clearProjectOverride, loadProjectOverrides, saveProjectOverride } from "./lib/projectOverrides";
 import "./styles/app.css";
+import { addLocalStudentWorks, applyLocalStudentWorks, clearLocalStudentWorks, loadLocalStudentWorks } from "./lib/localStudentWorks";
 
 export function App() {
+  const [localStudentWorks, setLocalStudentWorks] = useState(() => loadLocalStudentWorks());
   const [query, setQuery] = useState("kubizmus");
   const [filters, setFilters] = useState({ theme: "", grade: "", technique: "", methodSeries: "" });
   const [favoriteIds, setFavoriteIds] = useState([]);
@@ -69,7 +71,7 @@ export function App() {
           onToggleFavorite={toggleFavorite}
           onSaveProjectOverride={handleSaveProjectOverride}
           onResetProjectOverride={handleResetProjectOverride}
-        />
+         onAddLocalWorks={(projectId, images) => setLocalStudentWorks(addLocalStudentWorks(projectId, images))} onClearLocalWorks={(projectId) => setLocalStudentWorks(clearLocalStudentWorks(projectId))} />
       </section>
     </div>
   );
