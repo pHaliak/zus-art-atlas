@@ -1,9 +1,10 @@
 # ZUŠ Art Atlas
 
-## v1.1 Stable Test
+## v1.2.1 – Kubistický portrét
 
-Stabilná testovacia verzia:
-- bez externých API,
-- s reálnymi fotkami žiackych prác,
-- s filtrovaním podľa témy,
-- s novými záložkami v detaile projektu.
+Táto verzia pridáva prvú samostatnú sériu žiackych prác podľa nového lokálneho postupu:
+
+- projekt: Kubistický portrét,
+- technika: akryl, maľba, kresba,
+- ročník: 3. ročník, 2. časť I. stupňa,
+- fotografie uložené lokálne v aplikácii.

@@ -1,22 +1,20 @@
-# Release Notes – v1.1 Stable Test
-
-## Cieľ
-Stabilná testovacia verzia pred ďalším rozširovaním.
-
-## Zachované
-- reálne fotky žiackych prác,
-- filter podľa témy,
-- vyhľadávanie,
-- detail projektu,
-- textové referenčné diela,
-- stabilná verzia bez externých obrázkov/API.
+# Release Notes – v1.2.1 Kubistický portrét
 
 ## Nové
-- detail projektu je rozdelený na záložky:
-  - Téma,
-  - Inšpirácia,
-  - Moje skúsenosti.
-- záložka „Moje skúsenosti“ je zatiaľ pripravená ako test rozhrania, bez ukladania údajov.
+- Pridaný projekt **Kubistický portrét**.
+- Pridaných 7 reálnych fotografií žiackych prác.
+- Fotografie sú uložené lokálne v `public/student-work/kubisticky-portret/`.
+- Pridaná základná lokálna databáza `src/data/studentWorks.js`.
+- Projekt je zaradený pod tému **Kubizmus**.
+- Technika: akryl, maľba, kresba.
+- Ročník: 3. ročník, 2. časť I. stupňa.
+
+## Zachované
+- stabilný základ z predchádzajúcej funkčnej verzie,
+- reálne fotky žiackych prác,
+- vyhľadávanie,
+- filtrovanie,
+- detail projektu.
 
 ## Odporúčaný commit
-`v1.1 Stable Test`
+`v1.2.1 Kubistický portrét`

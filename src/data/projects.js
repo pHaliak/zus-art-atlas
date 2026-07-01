@@ -1,5 +1,76 @@
 export const projects = [
   {
+    "id": "real-kubisticky-portret",
+    "title": "Kubistický portrét",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "apríl",
+    "methodSeries": "Kubizmus a štylizácia",
+    "technique": "akryl, maľba, kresba",
+    "area": "Portrét, geometrická štylizácia, moderné umenie",
+    "goal": "Vytvoriť portrét pomocou geometrického členenia tváre, farebných plôch a kubistickej štylizácie.",
+    "theme": "kubizmus, portrét, tvár, geometria, akryl, štylizácia",
+    "themeCategory": "Kubizmus",
+    "materials": [
+      "papier alebo výkres",
+      "ceruzka",
+      "akrylové farby",
+      "štetce",
+      "paleta",
+      "nádoba na vodu"
+    ],
+    "duration": "2 × 90 minút",
+    "difficulty": "stredná až náročná",
+    "motivation": "Ako môže portrét ukázať tvár z viacerých pohľadov naraz? Čo sa stane, keď tvár rozdelíme na geometrické plochy?",
+    "procedure": [
+      "Ukážka kubistických portrétov a rozhovor o geometrickej štylizácii.",
+      "Jednoduchá ceruzková skica hlavy a základných proporcií.",
+      "Rozdelenie tváre na geometrické plochy.",
+      "Návrh farebnosti a kontrastov.",
+      "Maľba akrylom po jednotlivých plochách.",
+      "Doplnenie obrysov, detailov a spoločná reflexia."
+    ],
+    "artists": [
+      {
+        "name": "Pablo Picasso",
+        "works": [
+          "kubistické portréty"
+        ],
+        "note": "rozklad tváre, viac pohľadov a expresívna štylizácia"
+      },
+      {
+        "name": "Juan Gris",
+        "works": [
+          "Portrait of Picasso"
+        ],
+        "note": "geometrická stavba portrétu a plošná kompozícia"
+      },
+      {
+        "name": "Georges Braque",
+        "works": [
+          "analytický kubizmus"
+        ],
+        "note": "fragmentácia tvaru a skladanie obrazu z častí"
+      }
+    ],
+    "colors": [
+      "#e53935",
+      "#fdd835",
+      "#1e88e5",
+      "#111111"
+    ],
+    "standard": "Portrét, štylizácia, geometrizácia tvaru, plošná farebná kompozícia, moderné umenie.",
+    "studentImages": [
+      "/student-work/kubisticky-portret/kubisticky-portret-01.jpg",
+      "/student-work/kubisticky-portret/kubisticky-portret-02.jpg",
+      "/student-work/kubisticky-portret/kubisticky-portret-03.jpg",
+      "/student-work/kubisticky-portret/kubisticky-portret-04.jpg",
+      "/student-work/kubisticky-portret/kubisticky-portret-05.jpg",
+      "/student-work/kubisticky-portret/kubisticky-portret-06.jpg",
+      "/student-work/kubisticky-portret/kubisticky-portret-07.jpg"
+    ],
+    "source": "Fotografie žiackych prác – Kubistický portrét"
+  },
+  {
     "id": "real-jesen",
     "title": "Jeseň – farebná atmosféra",
     "grade": "1.–3. ročník",

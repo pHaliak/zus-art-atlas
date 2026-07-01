@@ -1,12 +1,14 @@
 # Roadmap
 
-## v1.1 Stable Test
-- stabilizácia,
-- záložky v detaile témy,
-- test záložky Moje skúsenosti.
+## v1.2.1
+- pridaný Kubistický portrét,
+- lokálne uložené žiacke práce,
+- základ databázy `studentWorks`.
 
-## v1.2
-- stabilné referenčné obrázky autorov z lokálnej databázy.
+## v1.2.2
+- pridať ďalšiu sériu žiackych prác,
+- zjednotiť filter tém,
+- zlepšiť galériu.
 
 ## v1.3
-- funkčné pridávanie realizácií do záložky Moje skúsenosti.
+- lokálna databáza referenčných diel svetových autorov až po stabilizácii core.
