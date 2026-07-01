@@ -1,10 +1,11 @@
 # ZUŠ Art Atlas
 
-## v1.2.1 – Kubistický portrét
+## v1.2.2 – Student Import
 
-Táto verzia pridáva prvú samostatnú sériu žiackych prác podľa nového lokálneho postupu:
+Táto verzia pridáva ďalšie tri série žiackych prác:
 
-- projekt: Kubistický portrét,
-- technika: akryl, maľba, kresba,
-- ročník: 3. ročník, 2. časť I. stupňa,
-- fotografie uložené lokálne v aplikácii.
+- Dekoračná činnosť – drotárstvo,
+- Šachová figúrka – kresba,
+- Folklór – kresba.
+
+Všetko je uložené lokálne v projekte a pripravené pre GitHub/Vercel.

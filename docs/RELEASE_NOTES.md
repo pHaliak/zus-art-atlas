@@ -1,20 +1,15 @@
-# Release Notes – v1.2.1 Kubistický portrét
+# Release Notes – v1.2.2 Student Import
 
-## Nové
-- Pridaný projekt **Kubistický portrét**.
-- Pridaných 7 reálnych fotografií žiackych prác.
-- Fotografie sú uložené lokálne v `public/student-work/kubisticky-portret/`.
-- Pridaná základná lokálna databáza `src/data/studentWorks.js`.
-- Projekt je zaradený pod tému **Kubizmus**.
-- Technika: akryl, maľba, kresba.
+## Nové série žiackych prác
+- **Dekoračná činnosť – drotárstvo** – 4 fotografie.
+- **Šachová figúrka – kresba** – 7 fotografií.
+- **Folklór – kresba** – 9 fotografií.
+
+## Spoločné zaradenie
 - Ročník: 3. ročník, 2. časť I. stupňa.
-
-## Zachované
-- stabilný základ z predchádzajúcej funkčnej verzie,
-- reálne fotky žiackych prác,
-- vyhľadávanie,
-- filtrovanie,
-- detail projektu.
+- Všetky fotografie sú uložené lokálne v `public/student-work/`.
+- Aktualizovaná databáza projektov `src/data/projects.js`.
+- Aktualizovaná databáza žiackych prác `src/data/studentWorks.js`.
 
 ## Odporúčaný commit
-`v1.2.1 Kubistický portrét`
+`v1.2.2 Student Import`

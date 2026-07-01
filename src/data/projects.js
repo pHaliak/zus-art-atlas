@@ -1,5 +1,177 @@
 export const projects = [
   {
+    "id": "real-folklor-kresba",
+    "title": "Folklór – kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "jún",
+    "methodSeries": "Folklór, ornament a figurálna kresba",
+    "technique": "kresba, farebné ceruzky, ornament",
+    "area": "Ľudová kultúra, figurálna kresba, ornament, dekoratívna kompozícia",
+    "goal": "Vytvoriť figurálnu kresbu inšpirovanú folklórom, krojom, ornamentom a pohybom postavy.",
+    "theme": "folklór, kroj, ornament, tanec, ľudová kultúra, farebné ceruzky",
+    "themeCategory": "Folklór",
+    "materials": [
+      "farebný alebo biely papier",
+      "farebné ceruzky",
+      "biela pastelka",
+      "ceruzka",
+      "guma"
+    ],
+    "duration": "2 × 90 minút",
+    "difficulty": "stredná",
+    "motivation": "Ako sa dá pohyb, tanec a ľudový ornament preniesť do kresby? Všímanie rytmu, kroja a dekoratívnych prvkov.",
+    "procedure": [
+      "Rozhovor o folklóre, kroji, tanci a ľudovom ornamente.",
+      "Návrh postavy v pohybe alebo v kroji.",
+      "Rozvrhnutie postavy a dekoratívneho pozadia.",
+      "Kresba hlavných tvarov a línií.",
+      "Doplnenie ornamentov, stúh, krajiny alebo architektúry.",
+      "Farebné dokončenie a spoločná reflexia."
+    ],
+    "artists": [
+      {
+        "name": "Ľudové umenie",
+        "works": [
+          "kroj",
+          "ornament",
+          "výšivka"
+        ],
+        "note": "rytmus, dekoratívnosť, ornament a vzťah k tradícii"
+      }
+    ],
+    "colors": [
+      "#e53935",
+      "#43a047",
+      "#fdd835",
+      "#7e57c2"
+    ],
+    "standard": "Figurálna kresba, ornament, rytmus, dekoratívnosť, kultúrna tradícia a kompozícia.",
+    "studentImages": [
+      "/student-work/folklor-kresba/folklor-kresba-01.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-02.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-03.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-04.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-05.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-06.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-07.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-08.jpg",
+      "/student-work/folklor-kresba/folklor-kresba-09.jpg"
+    ],
+    "source": "Fotografie žiackych prác"
+  },
+  {
+    "id": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "február",
+    "methodSeries": "Kresba, objem a tieňovanie",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "area": "Kresba predmetu, objem, svetlo a tieň, kompozícia",
+    "goal": "Nakresliť šachovú figúrku s dôrazom na objem, svetlo, tieňovanie a kompozíciu priestoru.",
+    "theme": "šachová figúrka, kresba, tieňovanie, objem, ceruzka, koláž",
+    "themeCategory": "Kresba predmetu",
+    "materials": [
+      "výkres",
+      "ceruzky rôznej tvrdosti",
+      "guma",
+      "čierny fix alebo liner",
+      "farebné ceruzky podľa potreby"
+    ],
+    "duration": "2 × 90 minút",
+    "difficulty": "stredná až náročná",
+    "motivation": "Ako z jednoduchej šachovej figúrky vytvoriť presvedčivý objem? Pozorovanie svetla, tieňa a tvaru.",
+    "procedure": [
+      "Pozorovanie základného tvaru šachovej figúrky.",
+      "Rozvrhnutie kompozície na papieri.",
+      "Konštrukčná kresba osou a jednoduchými tvarmi.",
+      "Tieňovanie objemu ceruzkou.",
+      "Doplnenie priestoru, šachovnice alebo dekoratívneho pozadia.",
+      "Záverečné zvýraznenie kontrastov."
+    ],
+    "artists": [
+      {
+        "name": "Klasická študijná kresba",
+        "works": [
+          "štúdia predmetu",
+          "svetlo a tieň"
+        ],
+        "note": "pozorovanie predmetu, objemu a tónovej modelácie"
+      }
+    ],
+    "colors": [
+      "#111111",
+      "#eeeeee",
+      "#bdbdbd",
+      "#607d8b"
+    ],
+    "standard": "Kresba podľa skutočnosti, objem, šrafovanie, svetlo a tieň, kompozičné riešenie plochy.",
+    "studentImages": [
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-01.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-02.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-03.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-04.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-05.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-06.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-07.jpg"
+    ],
+    "source": "Fotografie žiackych prác"
+  },
+  {
+    "id": "real-dekoracna-cinnost-drotarstvo",
+    "title": "Dekoračná činnosť – drotárstvo",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "máj",
+    "methodSeries": "Dekoračná činnosť a remeslo",
+    "technique": "drotárstvo, navliekanie korálikov, priestorová tvorba",
+    "area": "Dekoratívna tvorba, remeslo, šperk, rytmus a opakovanie",
+    "goal": "Vytvoriť jednoduchý dekoratívny šperk pomocou drôtu, korálikov a opakovania tvarov.",
+    "theme": "drotárstvo, šperk, náušnice, koráliky, dekorácia, remeslo",
+    "themeCategory": "Drotárstvo",
+    "materials": [
+      "tenký drôt",
+      "koráliky",
+      "háčiky na náušnice",
+      "kliešte",
+      "podložka"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "Ako môže jednoduchý drôt a koráliky vytvoriť nositeľný šperk? Všímanie rytmu, symetrie a opakovania.",
+    "procedure": [
+      "Ukážka jednoduchých drôtených šperkov a rozhovor o rytme tvarov.",
+      "Návrh tvaru náušnice – kruh, kvapka alebo jednoduchý ornament.",
+      "Tvarovanie základnej drôtenej konštrukcie.",
+      "Navliekanie korálikov a práca s opakovaním.",
+      "Upevnenie háčika a kontrola pevnosti.",
+      "Spoločná prezentácia hotových šperkov."
+    ],
+    "artists": [
+      {
+        "name": "Ľudové remeslá",
+        "works": [
+          "drotárstvo",
+          "šperk",
+          "ornament"
+        ],
+        "note": "prepojenie remesla, dekorácie a úžitkového predmetu"
+      }
+    ],
+    "colors": [
+      "#c0a16b",
+      "#f5f5f5",
+      "#8bc34a",
+      "#6d4c41"
+    ],
+    "standard": "Dekoratívna tvorba, rytmus, symetria, remeselná činnosť, práca s materiálom.",
+    "studentImages": [
+      "/student-work/dekoracna-cinnost-drotarstvo/dekoracna-cinnost-drotarstvo-01.jpg",
+      "/student-work/dekoracna-cinnost-drotarstvo/dekoracna-cinnost-drotarstvo-02.jpg",
+      "/student-work/dekoracna-cinnost-drotarstvo/dekoracna-cinnost-drotarstvo-03.jpg",
+      "/student-work/dekoracna-cinnost-drotarstvo/dekoracna-cinnost-drotarstvo-04.jpg"
+    ],
+    "source": "Fotografie žiackych prác"
+  },
+  {
     "id": "real-kubisticky-portret",
     "title": "Kubistický portrét",
     "grade": "3. ročník, 2. časť I. stupňa",

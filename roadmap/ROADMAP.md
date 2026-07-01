@@ -1,14 +1,12 @@
 # Roadmap
 
-## v1.2.1
-- pridaný Kubistický portrét,
-- lokálne uložené žiacke práce,
-- základ databázy `studentWorks`.
-
 ## v1.2.2
-- pridať ďalšiu sériu žiackych prác,
-- zjednotiť filter tém,
-- zlepšiť galériu.
+- import ďalších žiackych prác,
+- pokračovanie v lokálnej databáze obrázkov.
+
+## v1.2.3
+- zlepšiť galériu a náhľady,
+- pridať ďalšie série podľa dodaných fotografií.
 
 ## v1.3
-- lokálna databáza referenčných diel svetových autorov až po stabilizácii core.
+- referenčné diela svetových autorov až po stabilizácii core.
