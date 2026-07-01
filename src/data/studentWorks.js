@@ -110,76 +110,6 @@ export const studentWorks = [
     "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
-    "id": "sachova-figurka-kresba-01",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 1",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-01.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
-    "id": "sachova-figurka-kresba-02",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 2",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-02.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
-    "id": "sachova-figurka-kresba-03",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 3",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-03.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
-    "id": "sachova-figurka-kresba-04",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 4",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-04.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
-    "id": "sachova-figurka-kresba-05",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 5",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-05.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
-    "id": "sachova-figurka-kresba-06",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 6",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-06.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
-    "id": "sachova-figurka-kresba-07",
-    "projectId": "real-sachova-figurka-kresba",
-    "title": "Šachová figúrka – kresba 7",
-    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-07.jpg",
-    "theme": "Šachová figúrka – kresba",
-    "technique": "kresba, ceruzka, tieňovanie, koláž",
-    "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  },
-  {
     "id": "folklor-kresba-01",
     "projectId": "real-folklor-kresba",
     "title": "Folklór – kresba 1",
@@ -268,8 +198,77 @@ export const studentWorks = [
     "technique": "kresba, farebné ceruzky, ornament",
     "grade": "3. ročník, 2. časť I. stupňa",
     "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
-  }
-,
+  },
+  {
+    "id": "sachova-figurka-kresba-01",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 1",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-01.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "sachova-figurka-kresba-02",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 2",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-02.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "sachova-figurka-kresba-03",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 3",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-03.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "sachova-figurka-kresba-04",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 4",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-04.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "sachova-figurka-kresba-05",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 5",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-05.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "sachova-figurka-kresba-06",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 6",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-06.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "sachova-figurka-kresba-07",
+    "projectId": "real-sachova-figurka-kresba",
+    "title": "Šachová figúrka – kresba 7",
+    "image": "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-07.jpg",
+    "theme": "Šachová figúrka – kresba",
+    "technique": "kresba, ceruzka, tieňovanie, koláž",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
   {
     "id": "sachova-figurka-kresba-08",
     "projectId": "real-sachova-figurka-kresba",
@@ -278,7 +277,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-09",
@@ -288,7 +287,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-10",
@@ -298,7 +297,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-11",
@@ -308,7 +307,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-12",
@@ -318,7 +317,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-13",
@@ -328,7 +327,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-14",
@@ -338,7 +337,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-15",
@@ -348,7 +347,7 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   },
   {
     "id": "sachova-figurka-kresba-16",
@@ -358,6 +357,6 @@ export const studentWorks = [
     "theme": "Šachová figúrka – kresba",
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
-    "note": "Žiacka práca."
+    "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
   }
 ];

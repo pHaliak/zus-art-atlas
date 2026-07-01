@@ -112,7 +112,16 @@ export const projects = [
       "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-04.jpg",
       "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-05.jpg",
       "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-06.jpg",
-      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-07.jpg"
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-07.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-08.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-09.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-10.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-11.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-12.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-13.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-14.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-15.jpg",
+      "/student-work/sachova-figurka-kresba/sachova-figurka-kresba-16.jpg"
     ],
     "source": "Fotografie žiackych prác"
   },

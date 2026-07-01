@@ -1,17 +1,9 @@
-# Release Notes – v1.2.7 Atelier Edition
+# Release Notes – v1.2.7 Atelier Edition – šachové figúrky FIX
 
-## Nové
-- Dizajnová verzia „Atelier Edition“.
-- Farebnejšia podkladová vrstva s maliarskymi striekancami a ateliérovou atmosférou.
-- Stred obrazovky zostáva svetlý a čitateľný.
-- Karty majú farebné akcenty, mäkšie tiene a viac tvorivý charakter.
-- Zachované všetky funkcie z v1.2.5.1.
-
-## Dôležité
-- Táto verzia nemení databázu.
-- Táto verzia nemení CMS.
-- Táto verzia nemení pridávanie prác.
-- Ide o vizuálnu úpravu a podkladovú vrstvu.
+## Oprava
+- Nové fotografie šachových figúrok boli fyzicky v projekte, ale neboli pridané do `studentImages`.
+- Opravené: projekt **Šachová figúrka – kresba** teraz zobrazuje 16 fotografií.
+- Žiadne iné časti aplikácie neboli menené.
 
 ## Odporúčaný commit
-`v1.2.7 Atelier Edition`
+`v1.2.7 Chess Gallery Fix`
