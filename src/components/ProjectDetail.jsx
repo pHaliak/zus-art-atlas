@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Palette, Plus, Printer, Star } from "lucide-react";
 import { createMockImage } from "../lib/mockImage";
-import { ReferenceWorksText } from "./ReferenceWorksText";
 import { ImageLightbox } from "./ImageLightbox";
+import { ProjectCmsEditor } from "./ProjectCmsEditor";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
@@ -16,10 +16,42 @@ function TabButton({ active, onClick, children }) {
   );
 }
 
-export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
-  const [selectedImage, setSelectedImage] = useState(null);
+export function ProjectDetail({
+  project,
+  isFavorite,
+  onToggleFavorite,
+  onSaveProjectOverride,
+  onResetProjectOverride,
+}) {
   const [tab, setTab] = useState("tema");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [editing, setEditing] = useState(false);
   const mainImage = project.studentImages?.[0] || createMockImage(project.title, project.colors, 0);
+
+  function handleSave(data) {
+    onSaveProjectOverride?.(project.id, data);
+    setEditing(false);
+  }
+
+  function handleReset() {
+    if (window.confirm("Naozaj chceš vrátiť pôvodné údaje tejto témy?")) {
+      onResetProjectOverride?.(project.id);
+      setEditing(false);
+    }
+  }
+
+  if (editing) {
+    return (
+      <main className="project-detail">
+        <ProjectCmsEditor
+          project={project}
+          onSave={handleSave}
+          onCancel={() => setEditing(false)}
+          onReset={handleReset}
+        />
+      </main>
+    );
+  }
 
   return (
     <main className="project-detail">
@@ -28,7 +60,10 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
 
         <div className="hero-text">
           <div className="eyebrow">{project.methodSeries}</div>
-          <h2>{project.title}</h2>
+          <div className="title-row">
+            <h2>{project.title}</h2>
+            <button className="secondary edit-meta-button" onClick={() => setEditing(true)}>✏️ Upraviť údaje</button>
+          </div>
 
           <div className="meta">
             <Pill>{project.themeCategory}</Pill>
@@ -39,7 +74,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
             <Pill>{project.difficulty}</Pill>
           </div>
 
-          <p className="goal">🎯 {project.goal}</p>
+          <p className="goal">🎯 {project.shortDescription || project.goal}</p>
 
           <div className="actions">
             <button onClick={() => window.print()}><Printer size={18} /> Tlačiť</button>
@@ -62,18 +97,24 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
           <section className="two-col">
             <article className="panel">
               <h3>Pomôcky</h3>
-              <ul>{project.materials.map((tool) => <li key={tool}>{tool}</li>)}</ul>
+              <ul>{(project.materials || []).map((tool) => <li key={tool}>{tool}</li>)}</ul>
             </article>
 
             <article className="panel">
               <h3>Motivácia</h3>
               <p>{project.motivation}</p>
+              {project.teacherNotes && (
+                <>
+                  <h3>Metodické poznámky</h3>
+                  <p>{project.teacherNotes}</p>
+                </>
+              )}
             </article>
           </section>
 
           <article className="panel">
             <h3>Postup</h3>
-            <ol>{project.procedure.map((step) => <li key={step}>{step}</li>)}</ol>
+            <ol>{(project.procedure || []).map((step) => <li key={step}>{step}</li>)}</ol>
           </article>
 
           <section className="standard">
@@ -83,41 +124,37 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
       )}
 
       {tab === "inspiracia" && (
-        <>
-          <ReferenceWorksText project={project} />
-
-          <section className="panel">
-            <h3><Palette size={20} /> Reálne práce žiakov</h3>
-            <div className="image-grid real-gallery">
-              {(project.studentImages || []).map((src) => (
-                <button className="gallery-image-button" key={src} onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
-                  <img src={src} alt="" loading="lazy" />
-                </button>
-              ))}
-            </div>
-            <p className="hint">Fotografie boli automaticky priradené podľa názvu súboru.</p>
-          </section>
-        </>
+        <section className="panel">
+          <h3><Palette size={20} /> Reálne práce žiakov</h3>
+          <div className="image-grid real-gallery">
+            {(project.studentImages || []).map((src) => (
+              <button className="gallery-image-button" key={src} onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
+                <img src={src} alt="" loading="lazy" />
+              </button>
+            ))}
+          </div>
+          <p className="hint">Fotografie boli zaradené podľa názvu súboru a popisu.</p>
+        </section>
       )}
 
       {tab === "skusenosti" && (
         <section className="panel experience-panel">
           <h3>Moje skúsenosti</h3>
           <div className="experience-card">
-            <b>Zatiaľ pripravené na dopĺňanie</b>
-            <p>Táto záložka bude slúžiť na tvoje krátke poznámky po realizácii hodiny.</p>
+            <b>Pripravené na ďalší krok</b>
+            <p>Tu budú tvoje krátke poznámky po realizácii hodiny.</p>
             <ul>
               <li>Rok realizácie</li>
-              <li>Krátka poznámka, čo fungovalo</li>
+              <li>Čo fungovalo</li>
               <li>Čo zmeniť nabudúce</li>
               <li>Hodnotenie témy ⭐⭐⭐⭐⭐</li>
               <li>Fotky z konkrétnej realizácie</li>
             </ul>
           </div>
           <button className="secondary disabled-button" disabled>+ Pridať realizáciu — pripravujeme</button>
-          <p className="hint">Vo v1.1 túto záložku iba testujeme ako stabilnú súčasť rozhrania. Ukladanie údajov pridáme až v ďalšej verzii.</p>
         </section>
       )}
+
       <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
     </main>
   );

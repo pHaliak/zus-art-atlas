@@ -1,10 +1,10 @@
 # Roadmap
 
-## v1.2.3
-- fullscreen náhľad žiackych prác v galérii.
-
 ## v1.2.4
-- ďalší import žiackych prác podľa dodaných fotografií.
+- CMS editor metadát projektu.
+
+## v1.2.5
+- doladenie CMS podľa testovania.
 
 ## v1.3
-- zhutnenie core a postupné dopĺňanie referenčných diel až po stabilizácii.
+- až po stabilizácii core doplniť ďalšie funkcie alebo trvalú cloud databázu.

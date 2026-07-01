@@ -1,6 +1,6 @@
 {
   "name": "zus-art-atlas",
-  "version": "1.2.3-lightbox",
+  "version": "1.2.4-cms-metadata",
   "private": true,
   "type": "module",
   "scripts": {

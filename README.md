@@ -1,7 +1,22 @@
 # ZUŠ Art Atlas
 
-## v1.2.3 – Lightbox
+## v1.2.4 – CMS Metadata
 
-Malá stabilná úprava galérie:
-- klik na žiacku prácu otvorí obrázok na celý displej,
-- Esc obrázok zavrie.
+Táto verzia pridáva jednoduchý CMS editor pre textové údaje projektu.
+
+Upraviteľné:
+- názov,
+- popis,
+- cieľ,
+- téma,
+- ročník,
+- mesiac,
+- technika,
+- čas,
+- náročnosť,
+- pomôcky,
+- postup,
+- metodické poznámky,
+- kľúčové slová.
+
+Fotografie a galérie zostávajú statické.

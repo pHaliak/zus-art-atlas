@@ -1,14 +1,28 @@
-# Release Notes – v1.2.3 Lightbox
+# Release Notes – v1.2.4 CMS Metadata
 
 ## Nové
-- Po kliknutí na obrázok žiackej práce v sekcii Inšpirácia sa obrázok otvorí na celý displej.
-- Náhľad sa dá zavrieť:
-  - klávesom `Esc`,
-  - kliknutím mimo obrázka,
-  - tlačidlom ×.
+- Pridané tlačidlo **Upraviť údaje** v detaile témy.
+- Upravovať sa dajú:
+  - názov projektu,
+  - krátky popis,
+  - cieľ hodiny,
+  - téma,
+  - ročník,
+  - mesiac,
+  - technika,
+  - čas,
+  - náročnosť,
+  - pomôcky,
+  - postup,
+  - metodické poznámky,
+  - kľúčové slová.
 
 ## Dôležité
-Nemení sa štruktúra databázy ani obsah tém. Ide iba o malé stabilné zlepšenie galérie.
+- Fotografie sa nemenia.
+- Galéria zostáva statická.
+- Úpravy sa ukladajú lokálne v prehliadači cez `localStorage`.
+- To znamená, že sú dostupné na tom zariadení a v tom prehliadači, kde boli uložené.
+- Neskôr môžeme pridať skutočnú cloud databázu, ale zatiaľ držíme stabilné jadro.
 
 ## Odporúčaný commit
-`v1.2.3 Lightbox`
+`v1.2.4 CMS Metadata`
