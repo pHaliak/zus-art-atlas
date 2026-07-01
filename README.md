@@ -1,7 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.7 – Atelier Edition
+## v1.2.8 – Hide Photos
 
-Dizajnová verzia s farebnou ateliérovou podkladovou vrstvou.
-
-Funkčne vychádza z poslednej stabilnej verzie v1.2.5.1.
+Pridaná možnosť lokálne skryť fotografie v galérii žiackych prác vrátane tých, ktoré boli vložené ako default cez export.

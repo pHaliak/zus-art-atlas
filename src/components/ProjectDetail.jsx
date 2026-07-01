@@ -4,6 +4,7 @@ import { createMockImage } from "../lib/mockImage";
 import { ImageLightbox } from "./ImageLightbox";
 import { ProjectCmsEditor } from "./ProjectCmsEditor";
 import { addLocalStudentWorks, clearLocalStudentWorks, filesToDataUrls, loadLocalStudentWorks } from "../lib/localStudentWorks";
+import { clearHiddenProjectImages, hideProjectImage, loadHiddenProjectImages, unhideProjectImage } from "../lib/hiddenProjectImages";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
@@ -17,12 +18,16 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
   const [tab, setTab] = useState("tema");
   const [selectedImage, setSelectedImage] = useState(null);
   const [localStudentWorks, setLocalStudentWorks] = useState(() => loadLocalStudentWorks());
+  const [hiddenProjectImages, setHiddenProjectImages] = useState(() => loadHiddenProjectImages());
   const fileInputRef = useRef(null);
   const [editing, setEditing] = useState(false);
   const addedImages = localStudentWorks[project.id] || [];
   const allStudentImages = [...(project.studentImages || []), ...addedImages];
+  const hiddenImages = hiddenProjectImages[project.id] || [];
+  const visibleStudentImages = allStudentImages.filter((src) => !hiddenImages.includes(src));
+  const hiddenCount = hiddenImages.length;
   const addedCount = addedImages.length;
-  const mainImage = allStudentImages[0] || createMockImage(project.title, project.colors, 0);
+  const mainImage = visibleStudentImages[0] || createMockImage(project.title, project.colors, 0);
 
   function handleSave(data) {
     onSaveProjectOverride(project.id, data);
@@ -55,6 +60,26 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
   function handleClearAddedWorks() {
     if (window.confirm("Odstrániť lokálne pridané práce z tejto témy?")) {
       setLocalStudentWorks(clearLocalStudentWorks(project.id));
+    }
+  }
+
+
+  function handleHideImage(imageSrc) {
+    if (window.confirm("Skryť túto fotografiu z galérie?")) {
+      setHiddenProjectImages(hideProjectImage(project.id, imageSrc));
+      if (selectedImage === imageSrc) {
+        setSelectedImage(null);
+      }
+    }
+  }
+
+  function handleRestoreImage(imageSrc) {
+    setHiddenProjectImages(unhideProjectImage(project.id, imageSrc));
+  }
+
+  function handleRestoreAllHiddenImages() {
+    if (window.confirm("Obnoviť všetky skryté fotografie v tejto téme?")) {
+      setHiddenProjectImages(clearHiddenProjectImages(project.id));
     }
   }
 
@@ -125,13 +150,32 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
         <section className="panel">
           <h3><Palette size={20} /> Reálne práce žiakov</h3>
           <div className="image-grid real-gallery">
-            {allStudentImages.map((src) => (
-              <button className="gallery-image-button" key={src} onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
-                <img src={src} alt="" loading="lazy" />
-              </button>
+            {visibleStudentImages.map((src) => (
+              <div className="gallery-image-wrap" key={src}>
+                <button className="gallery-image-button" onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
+                  <img src={src} alt="" loading="lazy" />
+                </button>
+                <button className="hide-photo-button" onClick={() => handleHideImage(src)} title="Skryť fotografiu">
+                  Skryť
+                </button>
+              </div>
             ))}
           </div>
-          <div className="gallery-footer"><p className="hint">Fotografie boli zaradené podľa názvu súboru a popisu. Lokálne pridané: {addedCount}</p>{addedCount > 0 && <button className="danger-secondary small-button" onClick={handleClearAddedWorks}>Odstrániť lokálne pridané</button>}</div>
+          <div className="gallery-footer"><p className="hint">Fotografie boli zaradené podľa názvu súboru a popisu. Lokálne pridané: {addedCount} · Skryté: {hiddenCount}</p><div className="gallery-footer-actions">{addedCount > 0 && <button className="danger-secondary small-button" onClick={handleClearAddedWorks}>Odstrániť lokálne pridané</button>}{hiddenCount > 0 && <button className="secondary small-button" onClick={handleRestoreAllHiddenImages}>Obnoviť skryté</button>}</div></div>
+        
+          {hiddenCount > 0 && (
+            <details className="hidden-photos-panel">
+              <summary>Skryté fotografie ({hiddenCount})</summary>
+              <div className="hidden-photos-grid">
+                {hiddenImages.map((src) => (
+                  <div className="hidden-photo-item" key={src}>
+                    <img src={src} alt="" loading="lazy" />
+                    <button className="secondary small-button" onClick={() => handleRestoreImage(src)}>Obnoviť</button>
+                  </div>
+                ))}
+              </div>
+            </details>
+          )}
         </section>
       )}
 
