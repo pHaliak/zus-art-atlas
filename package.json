@@ -1,6 +1,6 @@
 {
   "name": "zus-art-atlas",
-  "version": "1.2.4-cms-metadata",
+  "version": "1.2.4-cms-metadata-fixed",
   "private": true,
   "type": "module",
   "scripts": {

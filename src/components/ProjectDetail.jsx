@@ -9,33 +9,23 @@ function Pill({ children }) {
 }
 
 function TabButton({ active, onClick, children }) {
-  return (
-    <button className={active ? "tab-button active" : "tab-button"} onClick={onClick}>
-      {children}
-    </button>
-  );
+  return <button className={active ? "tab-button active" : "tab-button"} onClick={onClick}>{children}</button>;
 }
 
-export function ProjectDetail({
-  project,
-  isFavorite,
-  onToggleFavorite,
-  onSaveProjectOverride,
-  onResetProjectOverride,
-}) {
+export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSaveProjectOverride, onResetProjectOverride }) {
   const [tab, setTab] = useState("tema");
   const [selectedImage, setSelectedImage] = useState(null);
   const [editing, setEditing] = useState(false);
   const mainImage = project.studentImages?.[0] || createMockImage(project.title, project.colors, 0);
 
   function handleSave(data) {
-    onSaveProjectOverride?.(project.id, data);
+    onSaveProjectOverride(project.id, data);
     setEditing(false);
   }
 
   function handleReset() {
     if (window.confirm("Naozaj chceš vrátiť pôvodné údaje tejto témy?")) {
-      onResetProjectOverride?.(project.id);
+      onResetProjectOverride(project.id);
       setEditing(false);
     }
   }
@@ -43,12 +33,7 @@ export function ProjectDetail({
   if (editing) {
     return (
       <main className="project-detail">
-        <ProjectCmsEditor
-          project={project}
-          onSave={handleSave}
-          onCancel={() => setEditing(false)}
-          onReset={handleReset}
-        />
+        <ProjectCmsEditor project={project} onSave={handleSave} onCancel={() => setEditing(false)} onReset={handleReset} />
       </main>
     );
   }
@@ -57,14 +42,12 @@ export function ProjectDetail({
     <main className="project-detail">
       <section className="hero">
         <img src={mainImage} alt="" />
-
         <div className="hero-text">
           <div className="eyebrow">{project.methodSeries}</div>
           <div className="title-row">
             <h2>{project.title}</h2>
             <button className="secondary edit-meta-button" onClick={() => setEditing(true)}>✏️ Upraviť údaje</button>
           </div>
-
           <div className="meta">
             <Pill>{project.themeCategory}</Pill>
             <Pill>{project.grade}</Pill>
@@ -73,14 +56,10 @@ export function ProjectDetail({
             <Pill>{project.duration}</Pill>
             <Pill>{project.difficulty}</Pill>
           </div>
-
           <p className="goal">🎯 {project.shortDescription || project.goal}</p>
-
           <div className="actions">
             <button onClick={() => window.print()}><Printer size={18} /> Tlačiť</button>
-            <button className={isFavorite ? "secondary favorite-on" : "secondary"} onClick={() => onToggleFavorite(project.id)}>
-              <Star size={18} /> {isFavorite ? "Obľúbené" : "Uložiť"}
-            </button>
+            <button className={isFavorite ? "secondary favorite-on" : "secondary"} onClick={() => onToggleFavorite(project.id)}><Star size={18} /> {isFavorite ? "Obľúbené" : "Uložiť"}</button>
             <button className="secondary"><Plus size={18} /> Pridať práce</button>
           </div>
         </div>
@@ -99,27 +78,17 @@ export function ProjectDetail({
               <h3>Pomôcky</h3>
               <ul>{(project.materials || []).map((tool) => <li key={tool}>{tool}</li>)}</ul>
             </article>
-
             <article className="panel">
               <h3>Motivácia</h3>
               <p>{project.motivation}</p>
-              {project.teacherNotes && (
-                <>
-                  <h3>Metodické poznámky</h3>
-                  <p>{project.teacherNotes}</p>
-                </>
-              )}
+              {project.teacherNotes && <><h3>Metodické poznámky</h3><p>{project.teacherNotes}</p></>}
             </article>
           </section>
-
           <article className="panel">
             <h3>Postup</h3>
             <ol>{(project.procedure || []).map((step) => <li key={step}>{step}</li>)}</ol>
           </article>
-
-          <section className="standard">
-            <b>Väzba na učivo:</b> {project.standard}
-          </section>
+          <section className="standard"><b>Väzba na učivo:</b> {project.standard}</section>
         </>
       )}
 
@@ -143,13 +112,6 @@ export function ProjectDetail({
           <div className="experience-card">
             <b>Pripravené na ďalší krok</b>
             <p>Tu budú tvoje krátke poznámky po realizácii hodiny.</p>
-            <ul>
-              <li>Rok realizácie</li>
-              <li>Čo fungovalo</li>
-              <li>Čo zmeniť nabudúce</li>
-              <li>Hodnotenie témy ⭐⭐⭐⭐⭐</li>
-              <li>Fotky z konkrétnej realizácie</li>
-            </ul>
           </div>
           <button className="secondary disabled-button" disabled>+ Pridať realizáciu — pripravujeme</button>
         </section>

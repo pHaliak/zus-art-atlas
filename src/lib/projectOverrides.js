@@ -36,10 +36,10 @@ export function applyProjectOverrides(projects, overrides) {
     return {
       ...project,
       ...override,
+      id: project.id,
       studentImages: project.studentImages,
       source: project.source,
       colors: project.colors,
-      id: project.id,
     };
   });
 }

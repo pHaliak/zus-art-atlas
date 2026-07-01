@@ -1,22 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.4 – CMS Metadata
+## v1.2.4 CMS Metadata FIX
 
-Táto verzia pridáva jednoduchý CMS editor pre textové údaje projektu.
-
-Upraviteľné:
-- názov,
-- popis,
-- cieľ,
-- téma,
-- ročník,
-- mesiac,
-- technika,
-- čas,
-- náročnosť,
-- pomôcky,
-- postup,
-- metodické poznámky,
-- kľúčové slová.
-
-Fotografie a galérie zostávajú statické.
+Opravená verzia CMS editora metadát. Vychádza zo stabilnej v1.2.3 Lightbox.

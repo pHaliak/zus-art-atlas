@@ -1,28 +1,14 @@
-# Release Notes – v1.2.4 CMS Metadata
+# Release Notes – v1.2.4 CMS Metadata FIX
+
+## Oprava
+- Opravená biela obrazovka z predchádzajúcej v1.2.4.
+- Editor metadát je napojený konzervatívne na stabilnú v1.2.3.
 
 ## Nové
-- Pridané tlačidlo **Upraviť údaje** v detaile témy.
-- Upravovať sa dajú:
-  - názov projektu,
-  - krátky popis,
-  - cieľ hodiny,
-  - téma,
-  - ročník,
-  - mesiac,
-  - technika,
-  - čas,
-  - náročnosť,
-  - pomôcky,
-  - postup,
-  - metodické poznámky,
-  - kľúčové slová.
-
-## Dôležité
-- Fotografie sa nemenia.
-- Galéria zostáva statická.
-- Úpravy sa ukladajú lokálne v prehliadači cez `localStorage`.
-- To znamená, že sú dostupné na tom zariadení a v tom prehliadači, kde boli uložené.
-- Neskôr môžeme pridať skutočnú cloud databázu, ale zatiaľ držíme stabilné jadro.
+- Tlačidlo **Upraviť údaje** v detaile témy.
+- Upravovať sa dajú textové údaje po kľúčové slová.
+- Fotografie zostávajú statické.
+- Úpravy sa ukladajú lokálne v prehliadači.
 
 ## Odporúčaný commit
-`v1.2.4 CMS Metadata`
+`v1.2.4 CMS Metadata FIX`
