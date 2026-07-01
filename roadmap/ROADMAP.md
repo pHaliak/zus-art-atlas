@@ -1,12 +1,10 @@
 # Roadmap
 
-## v1.2.2
-- import ďalších žiackych prác,
-- pokračovanie v lokálnej databáze obrázkov.
-
 ## v1.2.3
-- zlepšiť galériu a náhľady,
-- pridať ďalšie série podľa dodaných fotografií.
+- fullscreen náhľad žiackych prác v galérii.
+
+## v1.2.4
+- ďalší import žiackych prác podľa dodaných fotografií.
 
 ## v1.3
-- referenčné diela svetových autorov až po stabilizácii core.
+- zhutnenie core a postupné dopĺňanie referenčných diel až po stabilizácii.

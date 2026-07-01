@@ -1,15 +1,14 @@
-# Release Notes – v1.2.2 Student Import
+# Release Notes – v1.2.3 Lightbox
 
-## Nové série žiackych prác
-- **Dekoračná činnosť – drotárstvo** – 4 fotografie.
-- **Šachová figúrka – kresba** – 7 fotografií.
-- **Folklór – kresba** – 9 fotografií.
+## Nové
+- Po kliknutí na obrázok žiackej práce v sekcii Inšpirácia sa obrázok otvorí na celý displej.
+- Náhľad sa dá zavrieť:
+  - klávesom `Esc`,
+  - kliknutím mimo obrázka,
+  - tlačidlom ×.
 
-## Spoločné zaradenie
-- Ročník: 3. ročník, 2. časť I. stupňa.
-- Všetky fotografie sú uložené lokálne v `public/student-work/`.
-- Aktualizovaná databáza projektov `src/data/projects.js`.
-- Aktualizovaná databáza žiackych prác `src/data/studentWorks.js`.
+## Dôležité
+Nemení sa štruktúra databázy ani obsah tém. Ide iba o malé stabilné zlepšenie galérie.
 
 ## Odporúčaný commit
-`v1.2.2 Student Import`
+`v1.2.3 Lightbox`

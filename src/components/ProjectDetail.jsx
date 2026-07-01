@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Palette, Plus, Printer, Star } from "lucide-react";
 import { createMockImage } from "../lib/mockImage";
 import { ReferenceWorksText } from "./ReferenceWorksText";
+import { ImageLightbox } from "./ImageLightbox";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
@@ -16,6 +17,7 @@ function TabButton({ active, onClick, children }) {
 }
 
 export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
+  const [selectedImage, setSelectedImage] = useState(null);
   const [tab, setTab] = useState("tema");
   const mainImage = project.studentImages?.[0] || createMockImage(project.title, project.colors, 0);
 
@@ -88,7 +90,9 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
             <h3><Palette size={20} /> Reálne práce žiakov</h3>
             <div className="image-grid real-gallery">
               {(project.studentImages || []).map((src) => (
-                <img src={src} alt="" key={src} loading="lazy" />
+                <button className="gallery-image-button" key={src} onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
+                  <img src={src} alt="" loading="lazy" />
+                </button>
               ))}
             </div>
             <p className="hint">Fotografie boli automaticky priradené podľa názvu súboru.</p>
@@ -114,6 +118,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
           <p className="hint">Vo v1.1 túto záložku iba testujeme ako stabilnú súčasť rozhrania. Ukladanie údajov pridáme až v ďalšej verzii.</p>
         </section>
       )}
+      <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
     </main>
   );
 }
