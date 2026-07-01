@@ -1,5 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.5 – Add Works
+## v1.2.5.1 – Add Works FIX
 
-Tlačidlo + Pridať práce teraz otvorí výber fotografií a pridá ich do galérie aktuálnej témy lokálne v prehliadači.
+Oprava bielej obrazovky a stabilné lokálne pridávanie prác cez tlačidlo + Pridať práce.

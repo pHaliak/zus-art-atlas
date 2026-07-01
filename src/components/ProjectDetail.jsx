@@ -3,7 +3,7 @@ import { Palette, Plus, Printer, Star } from "lucide-react";
 import { createMockImage } from "../lib/mockImage";
 import { ImageLightbox } from "./ImageLightbox";
 import { ProjectCmsEditor } from "./ProjectCmsEditor";
-import { filesToDataUrls } from "../lib/localStudentWorks";
+import { addLocalStudentWorks, clearLocalStudentWorks, filesToDataUrls, loadLocalStudentWorks } from "../lib/localStudentWorks";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
@@ -16,10 +16,13 @@ function TabButton({ active, onClick, children }) {
 export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSaveProjectOverride, onResetProjectOverride }) {
   const [tab, setTab] = useState("tema");
   const [selectedImage, setSelectedImage] = useState(null);
-  const [editing, setEditing] = useState(false);
+  const [localStudentWorks, setLocalStudentWorks] = useState(() => loadLocalStudentWorks());
   const fileInputRef = useRef(null);
-  const addedCount = (project.studentImages || []).filter((src) => String(src).startsWith("data:image/")).length;
-  const mainImage = project.studentImages?.[0] || createMockImage(project.title, project.colors, 0);
+  const [editing, setEditing] = useState(false);
+  const addedImages = localStudentWorks[project.id] || [];
+  const allStudentImages = [...(project.studentImages || []), ...addedImages];
+  const addedCount = addedImages.length;
+  const mainImage = allStudentImages[0] || createMockImage(project.title, project.colors, 0);
 
   function handleSave(data) {
     onSaveProjectOverride(project.id, data);
@@ -30,6 +33,28 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
     if (window.confirm("Naozaj chceš vrátiť pôvodné údaje tejto témy?")) {
       onResetProjectOverride(project.id);
       setEditing(false);
+    }
+  }
+
+
+  async function handleAddWorks(event) {
+    const files = event.target.files;
+    if (!files?.length) return;
+
+    try {
+      const images = await filesToDataUrls(files);
+      if (images.length) {
+        setLocalStudentWorks(addLocalStudentWorks(project.id, images));
+        setTab("inspiracia");
+      }
+    } finally {
+      event.target.value = "";
+    }
+  }
+
+  function handleClearAddedWorks() {
+    if (window.confirm("Odstrániť lokálne pridané práce z tejto témy?")) {
+      setLocalStudentWorks(clearLocalStudentWorks(project.id));
     }
   }
 
@@ -64,7 +89,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
             <button onClick={() => window.print()}><Printer size={18} /> Tlačiť</button>
             <button className={isFavorite ? "secondary favorite-on" : "secondary"} onClick={() => onToggleFavorite(project.id)}><Star size={18} /> {isFavorite ? "Obľúbené" : "Uložiť"}</button>
             <button className="secondary" onClick={() => fileInputRef.current?.click()}><Plus size={18} /> Pridať práce</button>
-            <input ref={fileInputRef} className="hidden-file-input" type="file" accept="image/*" multiple onChange={handleFilesSelected} />
+            <input ref={fileInputRef} className="hidden-file-input" type="file" accept="image/*" multiple onChange={handleAddWorks} />
           </div>
         </div>
       </section>
@@ -100,13 +125,13 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
         <section className="panel">
           <h3><Palette size={20} /> Reálne práce žiakov</h3>
           <div className="image-grid real-gallery">
-            {(project.studentImages || []).map((src) => (
+            {allStudentImages.map((src) => (
               <button className="gallery-image-button" key={src} onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
                 <img src={src} alt="" loading="lazy" />
               </button>
             ))}
           </div>
-          <p className="hint">Fotografie boli zaradené podľa názvu súboru a popisu.</p>
+          <div className="gallery-footer"><p className="hint">Fotografie boli zaradené podľa názvu súboru a popisu. Lokálne pridané: {addedCount}</p>{addedCount > 0 && <button className="danger-secondary small-button" onClick={handleClearAddedWorks}>Odstrániť lokálne pridané</button>}</div>
         </section>
       )}
 

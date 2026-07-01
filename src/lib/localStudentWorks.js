@@ -8,21 +8,15 @@ export function loadLocalStudentWorks() {
   }
 }
 
-export function saveLocalStudentWorks(projectId, images) {
-  const current = loadLocalStudentWorks();
-  const next = {
-    ...current,
-    [projectId]: images,
-  };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  return next;
-}
-
 export function addLocalStudentWorks(projectId, newImages) {
   const current = loadLocalStudentWorks();
   const existing = current[projectId] || [];
-  const nextImages = [...existing, ...newImages];
-  return saveLocalStudentWorks(projectId, nextImages);
+  const next = {
+    ...current,
+    [projectId]: [...existing, ...newImages],
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+  return next;
 }
 
 export function clearLocalStudentWorks(projectId) {
@@ -30,17 +24,6 @@ export function clearLocalStudentWorks(projectId) {
   delete current[projectId];
   localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
   return current;
-}
-
-export function applyLocalStudentWorks(projects, localWorks) {
-  return projects.map((project) => {
-    const added = localWorks?.[project.id] || [];
-    if (!added.length) return project;
-    return {
-      ...project,
-      studentImages: [...(project.studentImages || []), ...added],
-    };
-  });
 }
 
 export function filesToDataUrls(files) {

@@ -1,15 +1,14 @@
-# Release Notes – v1.2.5 Add Works
+# Release Notes – v1.2.5.1 Add Works FIX
 
 ## Oprava
-- Tlačidlo **+ Pridať práce** už nie je iba vizuálne.
-- Po kliknutí otvorí výber obrázkov v počítači.
-- Vybrané obrázky sa pridajú do galérie aktuálnej témy.
-- Obrázky sa uložia lokálne v prehliadači cez `localStorage`.
+- Opravená biela obrazovka z v1.2.5.
+- Funkcia **+ Pridať práce** je teraz napojená iba v komponente detailu projektu.
+- Nezasahuje do `App.jsx`, takže neohrozuje štart aplikácie.
 
-## Dôležité
-- Toto je lokálne pridanie na danom počítači a v danom prehliadači.
-- Nie je to ešte zápis do GitHub projektu.
-- Oficiálne importy do databázy naďalej robíme naším doterajším ZIP postupom.
+## Funkcia
+- Klik na **+ Pridať práce** otvorí výber obrázkov.
+- Vybrané obrázky sa pridajú do galérie aktuálnej témy.
+- Ukladajú sa lokálne v prehliadači.
 
 ## Odporúčaný commit
-`v1.2.5 Add Works`
+`v1.2.5.1 Add Works FIX`
