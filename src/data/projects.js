@@ -69,20 +69,12 @@ export const projects = [
       {
         "artist": "Vincent van Gogh",
         "title": "Mulberry Tree",
-        "note": "expresívna farba, rukopis a jesenná farebnosť",
-        "query": "Vincent van Gogh Mulberry Tree"
+        "note": "expresívna farba, rukopis a jesenná farebnosť"
       },
       {
         "artist": "Gustav Klimt",
         "title": "Beech Forest",
-        "note": "rytmus stromov, plošnosť a dekoratívna farebnosť",
-        "query": "Gustav Klimt Beech Forest"
-      },
-      {
-        "artist": "Claude Monet",
-        "title": "Poplars",
-        "note": "farebná atmosféra krajiny a rytmus stromov",
-        "query": "Claude Monet Poplars painting"
+        "note": "rytmus stromov, plošnosť a dekoratívna farebnosť"
       }
     ]
   },
@@ -153,20 +145,12 @@ export const projects = [
       {
         "artist": "Henri Matisse",
         "title": "Cut-outs",
-        "note": "jednoduchý tvar, plocha a čistá farba",
-        "query": "Henri Matisse cut outs"
+        "note": "jednoduchý tvar, plocha a čistá farba"
       },
       {
         "artist": "Joan Miró",
         "title": "Constellations",
-        "note": "pohyb, línia, znak a hravosť",
-        "query": "Joan Miro Constellations"
-      },
-      {
-        "artist": "Alexander Calder",
-        "title": "Mobiles",
-        "note": "ľahkosť, pohyb a priestor",
-        "query": "Alexander Calder mobile sculpture"
+        "note": "pohyb, línia, znak a hravosť"
       }
     ]
   },
@@ -235,20 +219,12 @@ export const projects = [
       {
         "artist": "Paul Cézanne",
         "title": "Still Life with Apples",
-        "note": "zátišie, stavba tvaru a farebné vzťahy",
-        "query": "Paul Cezanne Still Life with Apples"
+        "note": "zátišie, stavba tvaru a farebné vzťahy"
       },
       {
         "artist": "Henri Matisse",
         "title": "Still Life",
-        "note": "plošná farebnosť a dekoratívny prístup",
-        "query": "Henri Matisse still life fruit"
-      },
-      {
-        "artist": "Caravaggio",
-        "title": "Basket of Fruit",
-        "note": "realistické pozorovanie ovocia a svetlo",
-        "query": "Caravaggio Basket of Fruit"
+        "note": "plošná farebnosť a dekoratívny prístup"
       }
     ]
   },
@@ -314,20 +290,12 @@ export const projects = [
       {
         "artist": "Paul Klee",
         "title": "Twittering Machine",
-        "note": "línia ako pohyb a výtvarné rozprávanie",
-        "query": "Paul Klee Twittering Machine"
+        "note": "línia ako pohyb a výtvarné rozprávanie"
       },
       {
         "artist": "Joan Miró",
         "title": "Constellations",
-        "note": "čiara, znak a fantázia",
-        "query": "Joan Miro Constellations"
-      },
-      {
-        "artist": "Wassily Kandinsky",
-        "title": "Several Circles",
-        "note": "abstraktné znaky, línie a rytmus",
-        "query": "Wassily Kandinsky Several Circles"
+        "note": "čiara, znak a fantázia"
       }
     ]
   },
@@ -394,20 +362,12 @@ export const projects = [
       {
         "artist": "Albrecht Dürer",
         "title": "Stag Beetle",
-        "note": "detailné pozorovanie prírody a kresba hmyzu",
-        "query": "Albrecht Durer Stag Beetle"
+        "note": "detailné pozorovanie prírody a kresba hmyzu"
       },
       {
         "artist": "Maria Sibylla Merian",
         "title": "Insect Studies",
-        "note": "vedecká ilustrácia, detail a štruktúra",
-        "query": "Maria Sibylla Merian insects"
-      },
-      {
-        "artist": "Ernst Haeckel",
-        "title": "Kunstformen der Natur",
-        "note": "symetria, prírodné štruktúry a rytmus",
-        "query": "Ernst Haeckel insects Kunstformen der Natur"
+        "note": "vedecká ilustrácia, detail a štruktúra"
       }
     ]
   },
@@ -473,20 +433,12 @@ export const projects = [
       {
         "artist": "Paul Cézanne",
         "title": "Still Life with Apples",
-        "note": "kompozícia, objem a maliarska stavba tvaru",
-        "query": "Paul Cezanne Still Life with Apples"
+        "note": "kompozícia, objem a maliarska stavba tvaru"
       },
       {
         "artist": "Giorgio Morandi",
         "title": "Still Life",
-        "note": "pokojná kompozícia a jemné farebné vzťahy",
-        "query": "Giorgio Morandi Still Life"
-      },
-      {
-        "artist": "Juan Gris",
-        "title": "Still Life",
-        "note": "kubistická stavba zátišia a geometrizácia",
-        "query": "Juan Gris Still Life"
+        "note": "pokojná kompozícia a jemné farebné vzťahy"
       }
     ]
   }

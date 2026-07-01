@@ -1,12 +1,22 @@
+import { useState } from "react";
 import { Palette, Plus, Printer, Star } from "lucide-react";
 import { createMockImage } from "../lib/mockImage";
-import { ReferenceWorksImages } from "./ReferenceWorksImages";
+import { ReferenceWorksText } from "./ReferenceWorksText";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
 }
 
+function TabButton({ active, onClick, children }) {
+  return (
+    <button className={active ? "tab-button active" : "tab-button"} onClick={onClick}>
+      {children}
+    </button>
+  );
+}
+
 export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
+  const [tab, setTab] = useState("tema");
   const mainImage = project.studentImages?.[0] || createMockImage(project.title, project.colors, 0);
 
   return (
@@ -39,38 +49,71 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
         </div>
       </section>
 
-      <section className="two-col">
-        <article className="panel">
-          <h3>Pomôcky</h3>
-          <ul>{project.materials.map((tool) => <li key={tool}>{tool}</li>)}</ul>
-        </article>
+      <nav className="detail-tabs">
+        <TabButton active={tab === "tema"} onClick={() => setTab("tema")}>Téma</TabButton>
+        <TabButton active={tab === "inspiracia"} onClick={() => setTab("inspiracia")}>Inšpirácia</TabButton>
+        <TabButton active={tab === "skusenosti"} onClick={() => setTab("skusenosti")}>Moje skúsenosti</TabButton>
+      </nav>
 
-        <article className="panel">
-          <h3>Motivácia</h3>
-          <p>{project.motivation}</p>
-        </article>
-      </section>
+      {tab === "tema" && (
+        <>
+          <section className="two-col">
+            <article className="panel">
+              <h3>Pomôcky</h3>
+              <ul>{project.materials.map((tool) => <li key={tool}>{tool}</li>)}</ul>
+            </article>
 
-      <article className="panel">
-        <h3>Postup</h3>
-        <ol>{project.procedure.map((step) => <li key={step}>{step}</li>)}</ol>
-      </article>
+            <article className="panel">
+              <h3>Motivácia</h3>
+              <p>{project.motivation}</p>
+            </article>
+          </section>
 
-      <ReferenceWorksImages project={project} />
+          <article className="panel">
+            <h3>Postup</h3>
+            <ol>{project.procedure.map((step) => <li key={step}>{step}</li>)}</ol>
+          </article>
 
-      <section className="panel">
-        <h3><Palette size={20} /> Reálne práce žiakov</h3>
-        <div className="image-grid real-gallery">
-          {(project.studentImages || []).map((src) => (
-            <img src={src} alt="" key={src} loading="lazy" />
-          ))}
-        </div>
-        <p className="hint">Fotografie boli automaticky priradené podľa názvu súboru.</p>
-      </section>
+          <section className="standard">
+            <b>Väzba na učivo:</b> {project.standard}
+          </section>
+        </>
+      )}
 
-      <section className="standard">
-        <b>Väzba na učivo:</b> {project.standard}
-      </section>
+      {tab === "inspiracia" && (
+        <>
+          <ReferenceWorksText project={project} />
+
+          <section className="panel">
+            <h3><Palette size={20} /> Reálne práce žiakov</h3>
+            <div className="image-grid real-gallery">
+              {(project.studentImages || []).map((src) => (
+                <img src={src} alt="" key={src} loading="lazy" />
+              ))}
+            </div>
+            <p className="hint">Fotografie boli automaticky priradené podľa názvu súboru.</p>
+          </section>
+        </>
+      )}
+
+      {tab === "skusenosti" && (
+        <section className="panel experience-panel">
+          <h3>Moje skúsenosti</h3>
+          <div className="experience-card">
+            <b>Zatiaľ pripravené na dopĺňanie</b>
+            <p>Táto záložka bude slúžiť na tvoje krátke poznámky po realizácii hodiny.</p>
+            <ul>
+              <li>Rok realizácie</li>
+              <li>Krátka poznámka, čo fungovalo</li>
+              <li>Čo zmeniť nabudúce</li>
+              <li>Hodnotenie témy ⭐⭐⭐⭐⭐</li>
+              <li>Fotky z konkrétnej realizácie</li>
+            </ul>
+          </div>
+          <button className="secondary disabled-button" disabled>+ Pridať realizáciu — pripravujeme</button>
+          <p className="hint">Vo v1.1 túto záložku iba testujeme ako stabilnú súčasť rozhrania. Ukladanie údajov pridáme až v ďalšej verzii.</p>
+        </section>
+      )}
     </main>
   );
 }

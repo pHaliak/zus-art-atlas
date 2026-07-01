@@ -1,11 +1,12 @@
 # Roadmap
 
-## Alpha 2.2
-- referenčné obrázky z verejných knižníc,
-- bezpečný fallback,
-- zachované reálne fotky žiakov.
+## v1.1 Stable Test
+- stabilizácia,
+- záložky v detaile témy,
+- test záložky Moje skúsenosti.
 
-## Alpha 2.3
-- fullscreen galéria,
-- výber titulnej fotky,
-- lepšie triedenie techník.
+## v1.2
+- stabilné referenčné obrázky autorov z lokálnej databázy.
+
+## v1.3
+- funkčné pridávanie realizácií do záložky Moje skúsenosti.

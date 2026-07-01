@@ -1,5 +1,9 @@
 # ZUŠ Art Atlas
 
-## Alpha 2.2 – Reference Images
+## v1.1 Stable Test
 
-Táto verzia pridáva prvé referenčné obrázky svetových autorov z verejne dostupných zdrojov cez Wikimedia Commons API.
+Stabilná testovacia verzia:
+- bez externých API,
+- s reálnymi fotkami žiackych prác,
+- s filtrovaním podľa témy,
+- s novými záložkami v detaile projektu.

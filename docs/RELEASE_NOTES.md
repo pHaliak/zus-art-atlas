@@ -1,10 +1,22 @@
-# Release Notes – Alpha 2.2 Reference Images
+# Release Notes – v1.1 Stable Test
+
+## Cieľ
+Stabilná testovacia verzia pred ďalším rozširovaním.
+
+## Zachované
+- reálne fotky žiackych prác,
+- filter podľa témy,
+- vyhľadávanie,
+- detail projektu,
+- textové referenčné diela,
+- stabilná verzia bez externých obrázkov/API.
 
 ## Nové
-- Pridané referenčné obrázky svetových autorov.
-- Obrázky sa načítavajú z verejne dostupných zdrojov cez Wikimedia Commons API.
-- Každé referenčné dielo má autora, názov, pedagogický komentár a zdroj obrázka.
-- Aplikácia má bezpečný fallback: ak sa obrázok nenačíta, zobrazí sa lokálny náhradný vizuál.
+- detail projektu je rozdelený na záložky:
+  - Téma,
+  - Inšpirácia,
+  - Moje skúsenosti.
+- záložka „Moje skúsenosti“ je zatiaľ pripravená ako test rozhrania, bez ukladania údajov.
 
 ## Odporúčaný commit
-`Alpha 2.2 Reference Images`
+`v1.1 Stable Test`
