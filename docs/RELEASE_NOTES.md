@@ -1,17 +1,17 @@
-# Release Notes – v1.2.6 Watercolor Paper
+# Release Notes – v1.2.7 Atelier Edition
 
 ## Nové
-- Dizajnový skin „Akvarelový papier“.
-- Jemná papierová textúra pozadia.
-- Decentné akvarelové farebné škvrny v rohoch.
-- Mäkšie karty, tiene a teplejšie farby.
+- Dizajnová verzia „Atelier Edition“.
+- Farebnejšia podkladová vrstva s maliarskymi striekancami a ateliérovou atmosférou.
+- Stred obrazovky zostáva svetlý a čitateľný.
+- Karty majú farebné akcenty, mäkšie tiene a viac tvorivý charakter.
 - Zachované všetky funkcie z v1.2.5.1.
 
 ## Dôležité
 - Táto verzia nemení databázu.
 - Táto verzia nemení CMS.
-- Táto verzia nemení import fotiek.
-- Ide iba o vizuálnu úpravu cez CSS.
+- Táto verzia nemení pridávanie prác.
+- Ide o vizuálnu úpravu a podkladovú vrstvu.
 
 ## Odporúčaný commit
-`v1.2.6 Watercolor Paper`
+`v1.2.7 Atelier Edition`

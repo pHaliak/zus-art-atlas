@@ -1,11 +1,10 @@
 # Roadmap
 
-## v1.2.6
-- vizuálny skin Akvarelový papier.
-
 ## v1.2.7
-- doladenie dizajnu podľa testovania.
-- prípadné úpravy kontrastu a čitateľnosti.
+- Atelier Edition vizuálny skin.
+
+## v1.2.8
+- doladenie kontrastu, čitateľnosti a farebných akcentov podľa testovania.
 
 ## v1.3
-- ďalšie funkcie až po schválení stabilného core a dizajnu.
+- ďalší rozvoj až po schválení stabilného dizajnu a core.

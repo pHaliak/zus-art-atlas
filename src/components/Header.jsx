@@ -1,1 +1,1 @@
-export function Header(){return <header className="topbar"><div className="logo">A</div><div><strong>ZUŠ Art Atlas</strong><span>v1.2.6 · Watercolor Paper FIX</span></div></header>}
+export function Header(){return <header className="topbar"><div className="logo">A</div><div><strong>ZUŠ Art Atlas</strong><span>v1.2.7 · Atelier Edition FIX</span></div></header>}
