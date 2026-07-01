@@ -1,5 +1,7 @@
 # ZUŠ Art Atlas
 
-## v1.2.5.1 – Add Works FIX
+## v1.2.6 – Watercolor Paper
 
-Oprava bielej obrazovky a stabilné lokálne pridávanie prác cez tlačidlo + Pridať práce.
+Dizajnová verzia s jemným akvarelovým papierovým pozadím.
+
+Funkčne vychádza z poslednej stabilnej verzie v1.2.5.1.

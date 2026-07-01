@@ -1,14 +1,17 @@
-# Release Notes – v1.2.5.1 Add Works FIX
+# Release Notes – v1.2.6 Watercolor Paper
 
-## Oprava
-- Opravená biela obrazovka z v1.2.5.
-- Funkcia **+ Pridať práce** je teraz napojená iba v komponente detailu projektu.
-- Nezasahuje do `App.jsx`, takže neohrozuje štart aplikácie.
+## Nové
+- Dizajnový skin „Akvarelový papier“.
+- Jemná papierová textúra pozadia.
+- Decentné akvarelové farebné škvrny v rohoch.
+- Mäkšie karty, tiene a teplejšie farby.
+- Zachované všetky funkcie z v1.2.5.1.
 
-## Funkcia
-- Klik na **+ Pridať práce** otvorí výber obrázkov.
-- Vybrané obrázky sa pridajú do galérie aktuálnej témy.
-- Ukladajú sa lokálne v prehliadači.
+## Dôležité
+- Táto verzia nemení databázu.
+- Táto verzia nemení CMS.
+- Táto verzia nemení import fotiek.
+- Ide iba o vizuálnu úpravu cez CSS.
 
 ## Odporúčaný commit
-`v1.2.5.1 Add Works FIX`
+`v1.2.6 Watercolor Paper`

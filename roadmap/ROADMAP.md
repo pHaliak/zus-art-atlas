@@ -1,7 +1,11 @@
 # Roadmap
 
-## v1.2.4
-- opravený CMS editor metadát.
+## v1.2.6
+- vizuálny skin Akvarelový papier.
 
-## v1.2.5
-- doladenie podľa testovania.
+## v1.2.7
+- doladenie dizajnu podľa testovania.
+- prípadné úpravy kontrastu a čitateľnosti.
+
+## v1.3
+- ďalšie funkcie až po schválení stabilného core a dizajnu.
