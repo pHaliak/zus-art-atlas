@@ -1,6 +1,6 @@
 import { Palette, Plus, Printer, Star } from "lucide-react";
 import { createMockImage } from "../lib/mockImage";
-import { ReferenceWorksText } from "./ReferenceWorksText";
+import { ReferenceWorksImages } from "./ReferenceWorksImages";
 
 function Pill({ children }) {
   return <span className="pill">{children}</span>;
@@ -56,7 +56,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite }) {
         <ol>{project.procedure.map((step) => <li key={step}>{step}</li>)}</ol>
       </article>
 
-      <ReferenceWorksText project={project} />
+      <ReferenceWorksImages project={project} />
 
       <section className="panel">
         <h3><Palette size={20} /> Reálne práce žiakov</h3>

@@ -1,9 +1,5 @@
 # ZUŠ Art Atlas
 
-## Alpha 2.1 Stable
+## Alpha 2.2 – Reference Images
 
-Stabilná verzia:
-- reálne galérie žiackych prác,
-- filter podľa témy,
-- textové referenčné diela,
-- bez externých obrázkov a bez rizikových API volaní.
+Táto verzia pridáva prvé referenčné obrázky svetových autorov z verejne dostupných zdrojov cez Wikimedia Commons API.

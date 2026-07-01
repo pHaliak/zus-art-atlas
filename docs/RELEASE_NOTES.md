@@ -1,25 +1,10 @@
-# Release Notes – Alpha 2.1 Stable
+# Release Notes – Alpha 2.2 Reference Images
 
-## Cieľ
-Stabilná oprava po problémoch vo v0.2.3.
-
-## Zachované
-- reálne fotky žiackych prác,
-- vyhľadávanie,
-- detail projektu,
-- galérie,
-- pomôcky,
-- motivácia,
-- postup.
-
-## Pridané
-- bezpečný filter podľa témy,
-- položka témy v detaile projektu,
-- textové referenčné diela autorov.
-
-## Zámerne odstránené / odložené
-- externé API pre obrázky diel,
-- rizikové komponenty `SafeImage` a `ReferenceWorks`.
+## Nové
+- Pridané referenčné obrázky svetových autorov.
+- Obrázky sa načítavajú z verejne dostupných zdrojov cez Wikimedia Commons API.
+- Každé referenčné dielo má autora, názov, pedagogický komentár a zdroj obrázka.
+- Aplikácia má bezpečný fallback: ak sa obrázok nenačíta, zobrazí sa lokálny náhradný vizuál.
 
 ## Odporúčaný commit
-`Alpha 2.1 Stable`
+`Alpha 2.2 Reference Images`
