@@ -1,19 +1,22 @@
-# Release Notes – v1.2.11 Lastúry
+# Release Notes – v1.2.12 Auto Theme Filter
 
-## Nové
-- Založená nová téma **Lastúry**.
-- Technika: **kresba**.
-- Ročník: **3. ročník, 2. časť I. stupňa**.
-- Pridaných 10 fotografií do galérie žiackych prác.
-- Fotografie sú uložené v:
-  `public/student-work/lastury/`
+## Oprava
+- Téma **Lastúry** sa už zobrazuje v rozbaľovacom filtri tém.
+- Zoznam tém už nie je ručne písaný statický zoznam.
+- Filter tém sa generuje automaticky z databázy projektov.
+- Témy sú zoradené abecedne.
+
+## Prečo je to dôležité
+- Pri ďalšej novej téme už nebude potrebné upravovať samostatný zoznam filtrov.
+- Stačí pridať projekt do databázy a filter sa aktualizuje sám.
 
 ## Kontrola
-- Projekt: `real-lastury`
-- Fotografie v databáze: 10
+- Počet tém vo filtri: 11
+- Lastúry vo filtri: áno
+- Projekt `real-lastury`: nájdený
+- Fotografie Lastúry v databáze: 10
 - Fyzické JPG súbory v priečinku lastury: 10
 - Chýbajúce súbory podľa databázy: 0
-- Súbory navyše mimo databázy: 0
 
 ## Zachované
 - CMS
@@ -21,7 +24,7 @@
 - pridávanie prác
 - lightbox navigácia
 - Atelier dizajn
-- existujúce projekty a galérie
+- všetky existujúce projekty a galérie
 
 ## Odporúčaný commit
-`v1.2.11 Lastúry`
+`v1.2.12 Auto Theme Filter`

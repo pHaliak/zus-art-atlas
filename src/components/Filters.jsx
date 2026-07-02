@@ -1,4 +1,4 @@
-import { grades, methodSeries, techniques, themes } from "../data/filters";
+import { grades, getThemesFromProjects, methodSeries, techniques } from "../data/filters";
 
 function Select({ label, value, options, onChange }) {
   return (
@@ -12,14 +12,14 @@ function Select({ label, value, options, onChange }) {
   );
 }
 
-export function Filters({ filters, setFilters }) {
+export function Filters({ filters, setFilters, projects = [] }) {
   function update(key, value) {
     setFilters((current) => ({ ...current, [key]: value }));
   }
 
   return (
     <section className="filters">
-      <Select label="Téma" value={filters.theme} options={themes} onChange={(value) => update("theme", value)} />
+      <Select label="Téma" value={filters.theme} options={getThemesFromProjects(projects)} onChange={(value) => update("theme", value)} />
       <Select label="Ročník" value={filters.grade} options={grades} onChange={(value) => update("grade", value)} />
       <Select label="Technika" value={filters.technique} options={techniques} onChange={(value) => update("technique", value)} />
       <Select label="Metodický rad" value={filters.methodSeries} options={methodSeries} onChange={(value) => update("methodSeries", value)} />
