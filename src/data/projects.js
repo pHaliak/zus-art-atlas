@@ -785,7 +785,7 @@ export const projects = [
     "area": "Textilná tvorba, priestor, farba a kompozícia",
     "goal": "Vytvoriť malú krajinku technikou suchého plstenia ihlou a pracovať s farebnými vrstvami, priestorom a detailom.",
     "theme": "krajinka, plstenie, ovčie rúno, vlna, suché plstenie, príroda, kompozícia",
-    "technique": "plstenie",
+    "technique": "Plstenie",
     "duration": "90 minút",
     "difficulty": "stredná",
     "materials": [
