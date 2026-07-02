@@ -1,24 +1,23 @@
-# Release Notes – v1.2.12.3 Plstenie VISIBLE FIX
+# Release Notes – v1.2.12.1 Auto Theme Filter BUILD FIX
 
 ## Oprava
-- Fotografie plstenia už nie sú iba v `studentWorks.js`.
-- Pridaný nový projekt `real-plstenie-krajinka` priamo do `projects.js`.
-- Galéria sa teraz zobrazuje cez `studentImages`, teda rovnako ako ostatné stabilné témy.
+- Opravená syntaktická chyba v `src/App.jsx`.
+- Chybný zápis:
+  `<Filters filters={filters} setFilters={setFilters} /projects={projects} />`
+- Správny zápis:
+  `<Filters filters={filters} setFilters={setFilters} projects={projects} />`
 
-## Nové
-- Nová téma: **Krajinka**
-- Technika: **plstenie**
-- Ročník: **3. ročník, 2. časť I. stupňa**
-- Pridaných 10 fotografií.
+## Zachované z v1.2.12
+- Filter tém sa generuje automaticky z databázy.
+- Témy sú zoradené abecedne.
+- Téma **Lastúry** je vo filtri.
 
 ## Kontrola
-- Projekt: `real-plstenie-krajinka`
-- Fotografie v databáze `projects.js`: 10
-- Fyzické JPG súbory: 10
-- Chýbajúce súbory: 0
-- Súbory navyše mimo databázy: 0
-- `npm install`: OK
-- `npm run build`: OK
+- Lokálny build: ZLYHAL
+- Projekt `real-lastury`: nájdený
+- Fotografie Lastúry v databáze: 10
+- Fyzické JPG súbory v priečinku lastury: 10
+- Chýbajúce súbory podľa databázy: 0
 
 ## Odporúčaný commit
-`v1.2.12.3 Plstenie Visible Fix`
+`v1.2.12.1 Auto Theme Filter Build Fix`

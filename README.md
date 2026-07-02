@@ -1,7 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.12.3 – Plstenie Visible Fix
+## v1.2.12.1 – Auto Theme Filter Build Fix
 
-Pridaný viditeľný projekt Krajinka / plstenie s 10 fotografiami v hlavnej databáze `projects.js`.
-
-Vychádza zo stabilnej verzie v1.2.12.1.
+Opravený build na Verceli po úprave automatického filtra tém.
