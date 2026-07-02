@@ -1,13 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.13.2 – Vercel Install FIX
+## v1.2.12.1 – Auto Theme Filter Build Fix
 
-Čistiaca verzia pre Vercel:
-- bez node_modules,
-- bez dist,
-- bez .vercel,
-- s .gitignore,
-- s čistým package-lock.json,
-- so stabilnými verziami závislostí.
-
-Obsahovo zachováva tému Krajinka / plstenie.
+Opravený build na Verceli po úprave automatického filtra tém.

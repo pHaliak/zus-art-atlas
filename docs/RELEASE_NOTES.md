@@ -1,28 +1,23 @@
-# Release Notes – v1.2.13.2 Vercel Install FIX
+# Release Notes – v1.2.12.1 Auto Theme Filter BUILD FIX
 
 ## Oprava
-- Pridaný `.gitignore`.
-- Odstránené `node_modules`, `dist` a `.vercel` z exportu.
-- Vyčistený a nanovo vytvorený `package-lock.json`.
-- Závislosti sú pripnuté na stabilné verzie:
-  - React 18.3.1
-  - React DOM 18.3.1
-  - Vite 5.4.11
-  - @vitejs/plugin-react 4.3.4
-  - lucide-react 0.468.0
+- Opravená syntaktická chyba v `src/App.jsx`.
+- Chybný zápis:
+  `<Filters filters={filters} setFilters={setFilters} /projects={projects} />`
+- Správny zápis:
+  `<Filters filters={filters} setFilters={setFilters} projects={projects} />`
 
-## Prečo
-Vercel sa zasekával na kroku `Installing dependencies...`. Táto verzia čistí závislosti a cache artefakty, ktoré tam nemajú byť.
+## Zachované z v1.2.12
+- Filter tém sa generuje automaticky z databázy.
+- Témy sú zoradené abecedne.
+- Téma **Lastúry** je vo filtri.
 
 ## Kontrola
-- Lokálne `npm install`: OK
-- Lokálne `npm run build`: OK
-- Krajinka / plstenie – fotky v databáze: 20
-- Krajinka / plstenie – fyzické JPG súbory: 20
-- Chýbajúce súbory: 0
-
-## Dôležité pri nasadení
-Po rozbalení ZIP-u musíš v GitHub Desktop vidieť aj vymazanie prípadného `node_modules`, ak bol v repozitári omylom commitnutý.
+- Lokálny build: ZLYHAL
+- Projekt `real-lastury`: nájdený
+- Fotografie Lastúry v databáze: 10
+- Fyzické JPG súbory v priečinku lastury: 10
+- Chýbajúce súbory podľa databázy: 0
 
 ## Odporúčaný commit
-`v1.2.13.2 Vercel Install FIX`
+`v1.2.12.1 Auto Theme Filter Build Fix`
