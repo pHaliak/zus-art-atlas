@@ -1,15 +1,17 @@
-# Release Notes – v1.2.10 Ovocie Update
+# Release Notes – v1.2.11 Lastúry
 
 ## Nové
-- Doplnených 5 nových fotografií do projektu **Ovocie – tvar a farba**.
-- Fotografie boli pridané do:
-  `public/student-work/ovocie/`
-- Databáza `projects.js` bola aktualizovaná v poli `studentImages`.
+- Založená nová téma **Lastúry**.
+- Technika: **kresba**.
+- Ročník: **3. ročník, 2. časť I. stupňa**.
+- Pridaných 10 fotografií do galérie žiackych prác.
+- Fotografie sú uložené v:
+  `public/student-work/lastury/`
 
 ## Kontrola
-- Projekt: `real-ovocie`
-- Fotografie v databáze: 12
-- Fyzické JPG súbory v priečinku ovocie: 12
+- Projekt: `real-lastury`
+- Fotografie v databáze: 10
+- Fyzické JPG súbory v priečinku lastury: 10
 - Chýbajúce súbory podľa databázy: 0
 - Súbory navyše mimo databázy: 0
 
@@ -19,6 +21,7 @@
 - pridávanie prác
 - lightbox navigácia
 - Atelier dizajn
+- existujúce projekty a galérie
 
 ## Odporúčaný commit
-`v1.2.10 Ovocie Update`
+`v1.2.11 Lastúry`

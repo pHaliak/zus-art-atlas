@@ -698,5 +698,81 @@ export const projects = [
         "note": "pokojná kompozícia a jemné farebné vzťahy"
       }
     ]
+  },
+  {
+    "id": "real-lastury",
+    "title": "Lastúry",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "celoročne",
+    "methodSeries": "Kresba",
+    "technique": "kresba",
+    "area": "Zátišie, tvar, pozorovanie",
+    "goal": "Pozorovať tvar lastúry, objem, štruktúru a tieňovanie pomocou kresby.",
+    "theme": "Lastúry",
+    "materials": [
+      "papier",
+      "pastelky",
+      "tempery",
+      "štetce",
+      "ceruzka"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "ovocie, zátišie, tvar, farba, pozorovanie – pozorovanie, rozhovor a obrazová inšpirácia.",
+    "procedure": [
+      "Pozorovanie ovocia.",
+      "Skica základného tvaru.",
+      "Farebné vrstvenie.",
+      "Doplnenie tieňa.",
+      "Hodnotenie objemu a farby."
+    ],
+    "artists": [
+      {
+        "name": "Paul Cézanne",
+        "works": [
+          "Still Life with Apples"
+        ],
+        "note": "zátišie a stavba tvaru"
+      },
+      {
+        "name": "Henri Matisse",
+        "works": [
+          "Still Life works"
+        ],
+        "note": "plošná farebnosť"
+      }
+    ],
+    "colors": [
+      "#d9d2c1",
+      "#8e8a7d"
+    ],
+    "standard": "Tvar, farba, zátišie, jednoduchý objem.",
+    "studentImages": [
+      "/student-work/lastury/lastury-01.jpg",
+      "/student-work/lastury/lastury-02.jpg",
+      "/student-work/lastury/lastury-03.jpg",
+      "/student-work/lastury/lastury-04.jpg",
+      "/student-work/lastury/lastury-05.jpg",
+      "/student-work/lastury/lastury-06.jpg",
+      "/student-work/lastury/lastury-07.jpg",
+      "/student-work/lastury/lastury-08.jpg",
+      "/student-work/lastury/lastury-09.jpg",
+      "/student-work/lastury/lastury-10.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Lastúry",
+    "referenceWorks": [
+      {
+        "artist": "Paul Cézanne",
+        "title": "Still Life with Apples",
+        "note": "zátišie, stavba tvaru a farebné vzťahy"
+      },
+      {
+        "artist": "Henri Matisse",
+        "title": "Still Life",
+        "note": "plošná farebnosť a dekoratívny prístup"
+      }
+    ],
+    "category": "Kresba"
   }
 ];

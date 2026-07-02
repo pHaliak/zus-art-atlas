@@ -1,7 +1,7 @@
 # ZUŠ Art Atlas
 
-## v1.2.10 – Ovocie Update
+## v1.2.11 – Lastúry
 
-Doplnených 5 fotografií do galérie projektu Ovocie – tvar a farba.
+Pridaná nová téma Lastúry s technikou kresba a 10 fotografiami žiackych prác.
 
-Funkčne vychádza z v1.2.9 Lightbox Navigation.
+Funkčne vychádza z v1.2.10 Ovocie Update.

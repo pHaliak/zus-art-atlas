@@ -408,5 +408,105 @@ export const studentWorks = [
     "technique": "maľba, akryl / tempera",
     "grade": "2.–4. ročník",
     "note": "Žiacka práca doplnená do galérie ovocie."
+  },
+  {
+    "id": "lastury-kresba-01",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 1",
+    "image": "/student-work/lastury/lastury-01.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-02",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 2",
+    "image": "/student-work/lastury/lastury-02.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-03",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 3",
+    "image": "/student-work/lastury/lastury-03.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-04",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 4",
+    "image": "/student-work/lastury/lastury-04.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-05",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 5",
+    "image": "/student-work/lastury/lastury-05.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-06",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 6",
+    "image": "/student-work/lastury/lastury-06.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-07",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 7",
+    "image": "/student-work/lastury/lastury-07.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-08",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 8",
+    "image": "/student-work/lastury/lastury-08.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-09",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 9",
+    "image": "/student-work/lastury/lastury-09.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "lastury-kresba-10",
+    "projectId": "real-lastury",
+    "title": "Lastúry – kresba 10",
+    "image": "/student-work/lastury/lastury-10.jpg",
+    "theme": "Lastúry",
+    "technique": "kresba",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "note": "Žiacka práca doplnená do galérie Lastúry."
   }
 ];
