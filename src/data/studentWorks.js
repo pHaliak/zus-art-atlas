@@ -509,4 +509,105 @@ export const studentWorks = [
     "grade": "3. ročník, 2. časť I. stupňa",
     "note": "Žiacka práca doplnená do galérie Lastúry."
   }
+,
+  {
+    "id":"plstenie-krajinka-01",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 1",
+    "image":"/student-work/plstenie-krajinka/plstenie-01.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-02",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 2",
+    "image":"/student-work/plstenie-krajinka/plstenie-02.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-03",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 3",
+    "image":"/student-work/plstenie-krajinka/plstenie-03.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-04",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 4",
+    "image":"/student-work/plstenie-krajinka/plstenie-04.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-05",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 5",
+    "image":"/student-work/plstenie-krajinka/plstenie-05.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-06",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 6",
+    "image":"/student-work/plstenie-krajinka/plstenie-06.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-07",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 7",
+    "image":"/student-work/plstenie-krajinka/plstenie-07.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-08",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 8",
+    "image":"/student-work/plstenie-krajinka/plstenie-08.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-09",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 9",
+    "image":"/student-work/plstenie-krajinka/plstenie-09.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  },
+  {
+    "id":"plstenie-krajinka-10",
+    "projectId":"real-plstenie-krajinka",
+    "title":"Plstenie – krajinka 10",
+    "image":"/student-work/plstenie-krajinka/plstenie-10.jpg",
+    "theme":"Plstenie",
+    "technique":"plstenie",
+    "grade":"1.–3. ročník",
+    "note":"Žiacka práca."
+  }
 ];
