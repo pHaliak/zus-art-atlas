@@ -1,22 +1,28 @@
-# Release Notes – v1.2.13.1 Dependency FIX
+# Release Notes – v1.2.13.2 Vercel Install FIX
 
 ## Oprava
-- Zachované zmeny z v1.2.13: nová téma **Krajinka / plstenie** s 20 fotkami.
-- Opravené závislosti v `package.json`:
-  - odstránené `latest`,
-  - verzie knižníc sú pripnuté na stabilné konkrétne verzie,
-  - vygenerovaný čistý `package-lock.json`.
+- Pridaný `.gitignore`.
+- Odstránené `node_modules`, `dist` a `.vercel` z exportu.
+- Vyčistený a nanovo vytvorený `package-lock.json`.
+- Závislosti sú pripnuté na stabilné verzie:
+  - React 18.3.1
+  - React DOM 18.3.1
+  - Vite 5.4.11
+  - @vitejs/plugin-react 4.3.4
+  - lucide-react 0.468.0
 
 ## Prečo
-Vercel sa zasekával na `Installing dependencies...`. Toto eliminuje riziko problémov s cache a priebežne meniacimi sa `latest` verziami balíkov.
+Vercel sa zasekával na kroku `Installing dependencies...`. Táto verzia čistí závislosti a cache artefakty, ktoré tam nemajú byť.
 
 ## Kontrola
-- Lokálny `npm install`: OK
-- Lokálny `npm run build`: OK
-- Projekt `real-krajinka-plstenie`: nájdený
-- Fotografie v databáze: 20
-- Fyzické JPG súbory: 20
+- Lokálne `npm install`: OK
+- Lokálne `npm run build`: OK
+- Krajinka / plstenie – fotky v databáze: 20
+- Krajinka / plstenie – fyzické JPG súbory: 20
 - Chýbajúce súbory: 0
 
+## Dôležité pri nasadení
+Po rozbalení ZIP-u musíš v GitHub Desktop vidieť aj vymazanie prípadného `node_modules`, ak bol v repozitári omylom commitnutý.
+
 ## Odporúčaný commit
-`v1.2.13.1 Dependency Fix`
+`v1.2.13.2 Vercel Install FIX`
