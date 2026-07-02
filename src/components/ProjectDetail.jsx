@@ -16,7 +16,7 @@ function TabButton({ active, onClick, children }) {
 
 export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSaveProjectOverride, onResetProjectOverride }) {
   const [tab, setTab] = useState("tema");
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [localStudentWorks, setLocalStudentWorks] = useState(() => loadLocalStudentWorks());
   const [hiddenProjectImages, setHiddenProjectImages] = useState(() => loadHiddenProjectImages());
   const fileInputRef = useRef(null);
@@ -26,6 +26,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
   const hiddenImages = hiddenProjectImages[project.id] || [];
   const visibleStudentImages = allStudentImages.filter((src) => !hiddenImages.includes(src));
   const hiddenCount = hiddenImages.length;
+  const selectedImage = selectedImageIndex === null ? null : visibleStudentImages[selectedImageIndex];
   const addedCount = addedImages.length;
   const mainImage = visibleStudentImages[0] || createMockImage(project.title, project.colors, 0);
 
@@ -68,7 +69,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
     if (window.confirm("Skryť túto fotografiu z galérie?")) {
       setHiddenProjectImages(hideProjectImage(project.id, imageSrc));
       if (selectedImage === imageSrc) {
-        setSelectedImage(null);
+        setSelectedImageIndex(null);
       }
     }
   }
@@ -81,6 +82,17 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
     if (window.confirm("Obnoviť všetky skryté fotografie v tejto téme?")) {
       setHiddenProjectImages(clearHiddenProjectImages(project.id));
     }
+  }
+
+
+  function handleNextImage() {
+    if (selectedImageIndex === null || !visibleStudentImages.length) return;
+    setSelectedImageIndex((selectedImageIndex + 1) % visibleStudentImages.length);
+  }
+
+  function handlePreviousImage() {
+    if (selectedImageIndex === null || !visibleStudentImages.length) return;
+    setSelectedImageIndex((selectedImageIndex - 1 + visibleStudentImages.length) % visibleStudentImages.length);
   }
 
   if (editing) {
@@ -150,9 +162,9 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
         <section className="panel">
           <h3><Palette size={20} /> Reálne práce žiakov</h3>
           <div className="image-grid real-gallery">
-            {visibleStudentImages.map((src) => (
+            {visibleStudentImages.map((src, index) => (
               <div className="gallery-image-wrap" key={src}>
-                <button className="gallery-image-button" onClick={() => setSelectedImage(src)} aria-label="Otvoriť obrázok na celý displej">
+                <button className="gallery-image-button" onClick={() => setSelectedImageIndex(index)} aria-label="Otvoriť obrázok na celý displej">
                   <img src={src} alt="" loading="lazy" />
                 </button>
                 <button className="hide-photo-button" onClick={() => handleHideImage(src)} title="Skryť fotografiu">
@@ -190,7 +202,7 @@ export function ProjectDetail({ project, isFavorite, onToggleFavorite, onSavePro
         </section>
       )}
 
-      <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
+      <ImageLightbox image={selectedImage} images={visibleStudentImages} currentIndex={selectedImageIndex ?? 0} onClose={() => setSelectedImageIndex(null)} onNext={handleNextImage} onPrevious={handlePreviousImage} />
     </main>
   );
 }

@@ -1,5 +1,5 @@
 # ZUŠ Art Atlas
 
-## v1.2.8 – Hide Photos
+## v1.2.9 – Lightbox Navigation
 
-Pridaná možnosť lokálne skryť fotografie v galérii žiackych prác vrátane tých, ktoré boli vložené ako default cez export.
+Fullscreen náhľad fotografií teraz podporuje šípky a klávesovú navigáciu.

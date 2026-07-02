@@ -485,3 +485,60 @@ button:not(:disabled):hover{
     transform:none;
   }
 }
+
+
+.image-lightbox-nav{
+  position:fixed;
+  top:50%;
+  transform:translateY(-50%);
+  width:58px;
+  height:74px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  font-size:58px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  z-index:10000;
+  padding:0 0 8px;
+  box-shadow:0 18px 45px rgba(0,0,0,.24);
+}
+
+.image-lightbox-nav:hover{
+  background:rgba(255,255,255,.25);
+  transform:translateY(-50%) scale(1.04);
+}
+
+.image-lightbox-prev{
+  left:24px;
+}
+
+.image-lightbox-next{
+  right:24px;
+}
+
+@media(max-width:700px){
+  .image-lightbox-nav{
+    width:46px;
+    height:58px;
+    font-size:44px;
+  }
+
+  .image-lightbox-prev{
+    left:10px;
+  }
+
+  .image-lightbox-next{
+    right:10px;
+  }
+
+  .image-lightbox-hint{
+    font-size:12px;
+    max-width:92vw;
+    text-align:center;
+  }
+}
