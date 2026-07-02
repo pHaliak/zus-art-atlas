@@ -774,5 +774,91 @@ export const projects = [
       }
     ],
     "category": "Kresba"
+  },
+  {
+    "id": "real-krajinka-plstenie",
+    "title": "Krajinka",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "celoročne",
+    "methodSeries": "Farba a kompozícia",
+    "technique": "plstenie",
+    "area": "Zátišie, tvar, pozorovanie",
+    "goal": "Vytvoriť jednoduchú krajinku technikou suchého plstenia so zameraním na vrstvenie farieb, priestor a detail.",
+    "theme": "Krajinka",
+    "materials": [
+      "papier",
+      "pastelky",
+      "tempery",
+      "štetce",
+      "ceruzka"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "ovocie, zátišie, tvar, farba, pozorovanie – pozorovanie, rozhovor a obrazová inšpirácia.",
+    "procedure": [
+      "Pozorovanie ovocia.",
+      "Skica základného tvaru.",
+      "Farebné vrstvenie.",
+      "Doplnenie tieňa.",
+      "Hodnotenie objemu a farby."
+    ],
+    "artists": [
+      {
+        "name": "Paul Cézanne",
+        "works": [
+          "Still Life with Apples"
+        ],
+        "note": "zátišie a stavba tvaru"
+      },
+      {
+        "name": "Henri Matisse",
+        "works": [
+          "Still Life works"
+        ],
+        "note": "plošná farebnosť"
+      }
+    ],
+    "colors": [
+      "#75b96f",
+      "#8ed2f0"
+    ],
+    "standard": "Tvar, farba, zátišie, jednoduchý objem.",
+    "studentImages": [
+      "/student-work/krajinka-plstenie/krajinka-plstenie-01.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-02.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-03.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-04.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-05.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-06.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-07.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-08.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-09.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-10.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-11.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-12.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-13.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-14.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-15.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-16.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-17.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-18.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-19.jpg",
+      "/student-work/krajinka-plstenie/krajinka-plstenie-20.jpg"
+    ],
+    "source": "Fotografie žiackych prác – názvy súborov podľa témy",
+    "themeCategory": "Krajinka",
+    "referenceWorks": [
+      {
+        "artist": "Paul Cézanne",
+        "title": "Still Life with Apples",
+        "note": "zátišie, stavba tvaru a farebné vzťahy"
+      },
+      {
+        "artist": "Henri Matisse",
+        "title": "Still Life",
+        "note": "plošná farebnosť a dekoratívny prístup"
+      }
+    ],
+    "category": "Plstenie"
   }
 ];

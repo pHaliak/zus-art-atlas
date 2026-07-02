@@ -1,23 +1,28 @@
-# Release Notes – v1.2.12.1 Auto Theme Filter BUILD FIX
+# Release Notes – v1.2.13 Krajinka / Plstenie
 
-## Oprava
-- Opravená syntaktická chyba v `src/App.jsx`.
-- Chybný zápis:
-  `<Filters filters={filters} setFilters={setFilters} /projects={projects} />`
-- Správny zápis:
-  `<Filters filters={filters} setFilters={setFilters} projects={projects} />`
-
-## Zachované z v1.2.12
-- Filter tém sa generuje automaticky z databázy.
-- Témy sú zoradené abecedne.
-- Téma **Lastúry** je vo filtri.
+## Nové
+- Založená nová téma **Krajinka**.
+- Technika: **plstenie**.
+- Ročník: **3. ročník, 2. časť I. stupňa**.
+- Pridaných 20 fotografií do galérie žiackych prác.
+- Fotografie sú uložené v:
+  `public/student-work/krajinka-plstenie/`
 
 ## Kontrola
-- Lokálny build: ZLYHAL
-- Projekt `real-lastury`: nájdený
-- Fotografie Lastúry v databáze: 10
-- Fyzické JPG súbory v priečinku lastury: 10
+- Projekt: `real-krajinka-plstenie`
+- Fotografie v databáze: 20
+- Fyzické JPG súbory v priečinku krajinka-plstenie: 20
 - Chýbajúce súbory podľa databázy: 0
+- Súbory navyše mimo databázy: 0
+- Lokálny build: OK
+
+## Zachované
+- CMS
+- skrývanie fotiek
+- pridávanie prác
+- lightbox navigácia
+- automatický abecedný filter tém
+- Atelier dizajn
 
 ## Odporúčaný commit
-`v1.2.12.1 Auto Theme Filter Build Fix`
+`v1.2.13 Krajinka Plstenie`
