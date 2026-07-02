@@ -1,6 +1,6 @@
 {
   "name": "zus-art-atlas",
-  "version": "1.2.12-auto-theme-filter",
+  "version": "1.2.12.1-auto-theme-filter-build-fix",
   "private": true,
   "type": "module",
   "scripts": {

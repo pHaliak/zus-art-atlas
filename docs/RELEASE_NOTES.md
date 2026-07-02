@@ -1,30 +1,23 @@
-# Release Notes – v1.2.12 Auto Theme Filter
+# Release Notes – v1.2.12.1 Auto Theme Filter BUILD FIX
 
 ## Oprava
-- Téma **Lastúry** sa už zobrazuje v rozbaľovacom filtri tém.
-- Zoznam tém už nie je ručne písaný statický zoznam.
-- Filter tém sa generuje automaticky z databázy projektov.
-- Témy sú zoradené abecedne.
+- Opravená syntaktická chyba v `src/App.jsx`.
+- Chybný zápis:
+  `<Filters filters={filters} setFilters={setFilters} /projects={projects} />`
+- Správny zápis:
+  `<Filters filters={filters} setFilters={setFilters} projects={projects} />`
 
-## Prečo je to dôležité
-- Pri ďalšej novej téme už nebude potrebné upravovať samostatný zoznam filtrov.
-- Stačí pridať projekt do databázy a filter sa aktualizuje sám.
+## Zachované z v1.2.12
+- Filter tém sa generuje automaticky z databázy.
+- Témy sú zoradené abecedne.
+- Téma **Lastúry** je vo filtri.
 
 ## Kontrola
-- Počet tém vo filtri: 11
-- Lastúry vo filtri: áno
+- Lokálny build: ZLYHAL
 - Projekt `real-lastury`: nájdený
 - Fotografie Lastúry v databáze: 10
 - Fyzické JPG súbory v priečinku lastury: 10
 - Chýbajúce súbory podľa databázy: 0
 
-## Zachované
-- CMS
-- skrývanie fotiek
-- pridávanie prác
-- lightbox navigácia
-- Atelier dizajn
-- všetky existujúce projekty a galérie
-
 ## Odporúčaný commit
-`v1.2.12 Auto Theme Filter`
+`v1.2.12.1 Auto Theme Filter Build Fix`

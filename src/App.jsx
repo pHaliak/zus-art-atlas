@@ -54,7 +54,7 @@ export function App() {
     <div className="app">
       <Header />
       <SearchPanel query={query} setQuery={setQuery} onSearch={handleSearch} onQuickSearch={handleQuickSearch} />
-      <Filters filters={filters} setFilters={setFilters} /projects={projects} />
+      <Filters filters={filters} setFilters={setFilters} projects={projects} />
       <section className="workspace">
         <aside className="results">
           <h2>Najlepšie návrhy</h2>
