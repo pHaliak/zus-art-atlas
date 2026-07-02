@@ -774,5 +774,79 @@ export const projects = [
       }
     ],
     "category": "Kresba"
+  },
+  {
+    "id": "real-plstenie-krajinka",
+    "title": "Krajinka",
+    "grade": "3. ročník, 2. časť I. stupňa",
+    "month": "celoročne",
+    "methodSeries": "Farba a kompozícia",
+    "technique": "plstenie",
+    "area": "Textilná tvorba, plstenie, krajina, farba a kompozícia",
+    "goal": "Vytvoriť malú krajinku technikou suchého plstenia so zameraním na farebné vrstvy, priestor a detail.",
+    "theme": "krajinka, plstenie, ovčie rúno, vlna, suché plstenie, príroda, kompozícia",
+    "materials": [
+      "ovčie rúno alebo farebná vlna",
+      "plstiaca ihla",
+      "penová podložka",
+      "kruhový alebo iný pevný podklad",
+      "nožnice podľa potreby"
+    ],
+    "duration": "90 minút",
+    "difficulty": "stredná",
+    "motivation": "Ako sa dá z mäkkej vlny vytvoriť krajina? Žiaci pozorujú vrstvenie farieb, prechody v priestore a detail v prírode.",
+    "procedure": [
+      "Ukážka hotových plstených krajín a vysvetlenie bezpečnej práce s ihlou.",
+      "Príprava podkladu a výber farebnosti krajiny.",
+      "Vrstvenie základných plôch oblohy, zeme alebo vody.",
+      "Spevňovanie vlny plstiacou ihlou.",
+      "Doplnenie detailov – stromy, kvety, kopce, zvieratá alebo slnko.",
+      "Záverečné dotvarovanie kompozície a spoločná reflexia."
+    ],
+    "artists": [
+      {
+        "name": "Textilná tvorba",
+        "works": [
+          "plstenie",
+          "vlna",
+          "priestorová a plošná textilná technika"
+        ],
+        "note": "práca s mäkkým materiálom, farbou, vrstvou a štruktúrou"
+      }
+    ],
+    "colors": [
+      "#75b96f",
+      "#8ed2f0",
+      "#f4d35e",
+      "#8b6f47"
+    ],
+    "standard": "Textilná technika, práca s materiálom, vrstvenie, farebná kompozícia, priestor a detail.",
+    "studentImages": [
+      "/student-work/plstenie-krajinka/plstenie-krajinka-01.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-02.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-03.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-04.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-05.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-06.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-07.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-08.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-09.jpg",
+      "/student-work/plstenie-krajinka/plstenie-krajinka-10.jpg"
+    ],
+    "source": "Fotografie žiackych prác – Krajinka / plstenie",
+    "themeCategory": "Krajinka",
+    "referenceWorks": [
+      {
+        "artist": "Paul Cézanne",
+        "title": "Still Life with Apples",
+        "note": "zátišie, stavba tvaru a farebné vzťahy"
+      },
+      {
+        "artist": "Henri Matisse",
+        "title": "Still Life",
+        "note": "plošná farebnosť a dekoratívny prístup"
+      }
+    ],
+    "category": "Kresba"
   }
 ];
