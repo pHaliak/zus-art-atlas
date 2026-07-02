@@ -1,28 +1,22 @@
-# Release Notes – v1.2.13 Krajinka / Plstenie
+# Release Notes – v1.2.13.1 Dependency FIX
 
-## Nové
-- Založená nová téma **Krajinka**.
-- Technika: **plstenie**.
-- Ročník: **3. ročník, 2. časť I. stupňa**.
-- Pridaných 20 fotografií do galérie žiackych prác.
-- Fotografie sú uložené v:
-  `public/student-work/krajinka-plstenie/`
+## Oprava
+- Zachované zmeny z v1.2.13: nová téma **Krajinka / plstenie** s 20 fotkami.
+- Opravené závislosti v `package.json`:
+  - odstránené `latest`,
+  - verzie knižníc sú pripnuté na stabilné konkrétne verzie,
+  - vygenerovaný čistý `package-lock.json`.
+
+## Prečo
+Vercel sa zasekával na `Installing dependencies...`. Toto eliminuje riziko problémov s cache a priebežne meniacimi sa `latest` verziami balíkov.
 
 ## Kontrola
-- Projekt: `real-krajinka-plstenie`
+- Lokálny `npm install`: OK
+- Lokálny `npm run build`: OK
+- Projekt `real-krajinka-plstenie`: nájdený
 - Fotografie v databáze: 20
-- Fyzické JPG súbory v priečinku krajinka-plstenie: 20
-- Chýbajúce súbory podľa databázy: 0
-- Súbory navyše mimo databázy: 0
-- Lokálny build: OK
-
-## Zachované
-- CMS
-- skrývanie fotiek
-- pridávanie prác
-- lightbox navigácia
-- automatický abecedný filter tém
-- Atelier dizajn
+- Fyzické JPG súbory: 20
+- Chýbajúce súbory: 0
 
 ## Odporúčaný commit
-`v1.2.13 Krajinka Plstenie`
+`v1.2.13.1 Dependency Fix`
