@@ -824,7 +824,24 @@ export const projects = [
       "/student-work/krajinka-plstenie/krajinka-plstenie-01.jpg",
       "/student-work/krajinka-plstenie/krajinka-plstenie-02.jpg",
       "/student-work/krajinka-plstenie/krajinka-plstenie-03.jpg",
-      "/student-work/krajinka-plstenie/krajinka-plstenie-04.jpg"
+      "/student-work/krajinka-plstenie/krajinka-plstenie-04.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-05.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-06.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-07.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-08.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-09.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-10.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-11.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-12.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-13.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-14.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-15.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-16.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-17.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-18.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-19.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-20.jpg",
+      "/student-work/krajinka-plstenie/plstenie-krajinka-21.jpg"
     ],
     "source": "Fotografie žiackych prác – Krajinka / plstenie"
   }

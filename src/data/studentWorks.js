@@ -508,5 +508,107 @@ export const studentWorks = [
     "technique": "kresba",
     "grade": "3. ročník, 2. časť I. stupňa",
     "note": "Žiacka práca doplnená do galérie Lastúry."
+  },
+  {
+    "id": "plstenie-krajinka-05",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 5",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-05.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-06",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 6",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-06.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-07",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 7",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-07.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-08",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 8",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-08.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-09",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 9",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-09.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-10",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 10",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-10.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-11",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 11",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-11.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-12",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 12",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-12.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-13",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 13",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-13.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-14",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 14",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-14.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-15",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 15",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-15.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-16",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 16",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-16.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-17",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 17",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-17.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-18",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 18",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-18.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-19",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 19",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-19.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-20",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 20",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-20.jpg"
+  },
+  {
+    "id": "plstenie-krajinka-21",
+    "projectId": "real-krajinka-plstenie",
+    "title": "Krajinka – plstenie 21",
+    "image": "/student-work/krajinka-plstenie/plstenie-krajinka-21.jpg"
   }
 ];
