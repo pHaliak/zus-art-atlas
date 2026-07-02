@@ -358,5 +358,55 @@ export const studentWorks = [
     "technique": "kresba, ceruzka, tieňovanie, koláž",
     "grade": "3. ročník, 2. časť I. stupňa",
     "note": "Žiacka práca zaradená podľa dodaného názvu súboru a popisu."
+  },
+  {
+    "id": "ovocie-zelenina-01",
+    "projectId": "real-ovocie",
+    "title": "Ovocie a zelenina – práca žiaka 1",
+    "image": "/student-work/ovocie/ovocie-08.jpg",
+    "theme": "Ovocie – tvar a farba",
+    "technique": "maľba, akryl / tempera",
+    "grade": "2.–4. ročník",
+    "note": "Žiacka práca doplnená do galérie ovocie."
+  },
+  {
+    "id": "ovocie-zelenina-02",
+    "projectId": "real-ovocie",
+    "title": "Ovocie a zelenina – práca žiaka 2",
+    "image": "/student-work/ovocie/ovocie-09.jpg",
+    "theme": "Ovocie – tvar a farba",
+    "technique": "maľba, akryl / tempera",
+    "grade": "2.–4. ročník",
+    "note": "Žiacka práca doplnená do galérie ovocie."
+  },
+  {
+    "id": "ovocie-zelenina-03",
+    "projectId": "real-ovocie",
+    "title": "Ovocie a zelenina – práca žiaka 3",
+    "image": "/student-work/ovocie/ovocie-10.jpg",
+    "theme": "Ovocie – tvar a farba",
+    "technique": "maľba, akryl / tempera",
+    "grade": "2.–4. ročník",
+    "note": "Žiacka práca doplnená do galérie ovocie."
+  },
+  {
+    "id": "ovocie-zelenina-04",
+    "projectId": "real-ovocie",
+    "title": "Ovocie a zelenina – práca žiaka 4",
+    "image": "/student-work/ovocie/ovocie-11.jpg",
+    "theme": "Ovocie – tvar a farba",
+    "technique": "maľba, akryl / tempera",
+    "grade": "2.–4. ročník",
+    "note": "Žiacka práca doplnená do galérie ovocie."
+  },
+  {
+    "id": "ovocie-zelenina-05",
+    "projectId": "real-ovocie",
+    "title": "Ovocie a zelenina – práca žiaka 5",
+    "image": "/student-work/ovocie/ovocie-12.jpg",
+    "theme": "Ovocie – tvar a farba",
+    "technique": "maľba, akryl / tempera",
+    "grade": "2.–4. ročník",
+    "note": "Žiacka práca doplnená do galérie ovocie."
   }
 ];

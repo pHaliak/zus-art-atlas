@@ -1,5 +1,7 @@
 # ZUŠ Art Atlas
 
-## v1.2.9 – Lightbox Navigation
+## v1.2.10 – Ovocie Update
 
-Fullscreen náhľad fotografií teraz podporuje šípky a klávesovú navigáciu.
+Doplnených 5 fotografií do galérie projektu Ovocie – tvar a farba.
+
+Funkčne vychádza z v1.2.9 Lightbox Navigation.

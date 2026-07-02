@@ -463,7 +463,12 @@ export const projects = [
       "/student-work/ovocie/ovocie-04.jpg",
       "/student-work/ovocie/ovocie-05.jpg",
       "/student-work/ovocie/ovocie-06.jpg",
-      "/student-work/ovocie/ovocie-07.jpg"
+      "/student-work/ovocie/ovocie-07.jpg",
+      "/student-work/ovocie/ovocie-08.jpg",
+      "/student-work/ovocie/ovocie-09.jpg",
+      "/student-work/ovocie/ovocie-10.jpg",
+      "/student-work/ovocie/ovocie-11.jpg",
+      "/student-work/ovocie/ovocie-12.jpg"
     ],
     "source": "Fotografie žiackych prác – názvy súborov podľa témy",
     "themeCategory": "Ovocie",
